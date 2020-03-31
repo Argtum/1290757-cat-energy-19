@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -36,8 +37,9 @@
       </div>
     </header>
 
-    <main class="page-form">
+    <main class="page-main">
       <h1 class="visually-hidden">Cat energy - подбор программы</h1>
+
       <section class="program-selection section">
         <div class="container">
           <h2 class="program-selection__title section__title">Подбор программы</h2>
@@ -49,17 +51,17 @@
             <div class="container">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field-text">
+                  <label class="form__field field field__text">
                     Имя:* <input type="text" name="cat-name" placeholder="Барсик" required>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-text">
+                  <label class="form__field field field__text">
                     Вес (кг):* <input type="text" name="cat-weight" placeholder="7" required>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-text">
+                  <label class="form__field field field__text">
                     Возраст (лет): <input type="text" name="cat-age" placeholder="7">
                   </label>
                 </li>
@@ -71,17 +73,17 @@
             <div class="container">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field-radio">
+                  <label class="form__field field field__radio">
                     <input type="radio" name="program" value="losing-weight" checked> Похудение
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-radio">
+                  <label class="form__field field field__radio">
                     <input type="radio" name="program" value="gain-weight"> Набор массы
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-radio">
+                  <label class="form__field field field__radio">
                     <input type="radio" name="program" value="unknown"> Не знаю (нужен ваш совет)
                   </label>
                 </li>
@@ -93,12 +95,12 @@
             <div class="container">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field-text">
+                  <label class="form__field field field__text">
                     E-mail:* <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-text">
+                  <label class="form__field field field__text">
                     Телефон:* <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                   </label>
                 </li>
@@ -110,7 +112,7 @@
             <div class="container">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field-textarea">
+                  <label class="form__field field field__textarea">
                     <span class="visually-hidden">Комментарий:</span>
                     <textarea name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
                   </label>
@@ -123,22 +125,22 @@
             <div class="container">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field-checkbox">
+                  <label class="form__field field field__checkbox">
                     <input type="checkbox" name="sweetener" checked> Сахарозаменитель
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-checkbox">
+                  <label class="form__field field field__checkbox">
                     <input type="checkbox" name="water"> Питьевая вода
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-checkbox">
+                  <label class="form__field field field__checkbox">
                     <input type="checkbox" name="milk"> Молоко
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field-checkbox">
+                  <label class="form__field field field__checkbox">
                     <input type="checkbox" name="vitamins"> Витамины
                   </label>
                 </li>
@@ -185,12 +187,12 @@
           </ul>
         </div>
 
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive"
-             class="page-footer__copyright-link page-footer__copyright-link--text">HTML Academy</a>
+             class="copyright__link copyright__link--text">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive"
-             class="page-footer__copyright-link page-footer__copyright-link--logo">
-            <img class="page-footer__copyright-image" src="https://via.placeholder.com/27x34" width="27" height="34"
+             class="copyright__link copyright__link--logo">
+            <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34"
                  alt="HTML Academy">
           </a>
         </div>
