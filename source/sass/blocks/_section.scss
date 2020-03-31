@@ -1,0 +1,11 @@
+.section__title {
+  font-size: 36px;
+  color: $main-text-color;
+
+  margin: 0;
+
+  &--white {
+    text-align: center;
+    color: #ffffff;
+  }
+}

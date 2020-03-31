@@ -1,0 +1,13 @@
+.button {
+  width: 100%;
+  padding: 11px 15px 11px;
+
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--green {
+    background-color: $main-color;
+    color: #ffffff;
+  }
+}

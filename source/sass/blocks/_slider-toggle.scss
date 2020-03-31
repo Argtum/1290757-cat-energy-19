@@ -1,0 +1,13 @@
+.slider-toggle__signature {
+  font-size: 16px;
+  color: $main-text-color;
+  text-transform: uppercase;
+
+  &--before {
+    text-align: left;
+  }
+
+  &--after {
+    text-align: right;
+  }
+}
