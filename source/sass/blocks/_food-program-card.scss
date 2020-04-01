@@ -20,6 +20,7 @@
   color: $secondary-text-color;
   font-weight: normal;
 
+  margin: 40px 0 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -29,4 +30,7 @@
   color: $main-text-color;
   text-transform: uppercase;
   font-weight: normal;
+
+  display: block;
+  margin-top: 20px;
 }
