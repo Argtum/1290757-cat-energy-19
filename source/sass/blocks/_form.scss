@@ -1,0 +1,29 @@
+.form__fieldset {
+  border: none;
+  padding: 15px 0;
+
+  &--no-title {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.form__legend {
+  font-size: 24px;
+  font-weight: normal;
+  color: $main-text-color;
+}
+
+.form__item {
+  margin-top: 14px;
+}
+
+.form__description {
+  margin: 23px 0 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.14;
+  text-align: center;
+  color: $secondary-text-color;
+}

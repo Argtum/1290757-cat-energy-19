@@ -1,3 +1,11 @@
+.section {
+  padding: 30px 0;
+
+  &--cat-food {
+    padding-top: 0;
+  }
+}
+
 .section__title {
   font-size: 36px;
   color: $main-text-color;
@@ -17,4 +25,10 @@
   line-height: 1.29;
   color: $secondary-text-color;
   font-weight: normal;
+
+  &--program-selection {
+    font-family: inherit;
+    color: $main-text-color;
+    text-transform: uppercase;
+  }
 }
