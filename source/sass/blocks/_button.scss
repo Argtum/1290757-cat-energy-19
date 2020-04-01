@@ -1,13 +1,21 @@
 .button {
+  display: block;
   width: 100%;
   padding: 11px 15px 11px;
 
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.25;
 
   &--green {
     background-color: $main-color;
     color: #ffffff;
+  }
+
+  &--light {
+    background-color: $secondary-color;
+    color: $secondary-text-color;
   }
 }

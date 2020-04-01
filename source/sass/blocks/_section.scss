@@ -1,6 +1,7 @@
 .section__title {
   font-size: 36px;
   color: $main-text-color;
+  font-weight: normal;
 
   margin: 0;
 
@@ -8,4 +9,12 @@
     text-align: center;
     color: #ffffff;
   }
+}
+
+.section__description {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $secondary-text-color;
+  font-weight: normal;
 }
