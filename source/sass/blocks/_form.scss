@@ -13,6 +13,12 @@
   color: $main-text-color;
 }
 
+.form__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
 .form__item {
   margin-top: 14px;
 }
@@ -20,10 +26,18 @@
 .form__description {
   margin: 23px 0 0;
 
-  font-family: Arial, sans-serif;
+  font-family: $secondary-font;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.14;
   text-align: center;
   color: $secondary-text-color;
+}
+
+.form__label {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.13;
+  color: #222222;
+  text-transform: uppercase;
 }

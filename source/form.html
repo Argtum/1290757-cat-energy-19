@@ -12,10 +12,7 @@
         <div class="container">
           <div class="page-header__logo logo">
             <a href="index.html" class="logo__link">
-              <img src="https://via.placeholder.com/33x38" class="logo__image logo__image--icon"
-                   width="33" height="38" alt="Cat energy logo">
-              <img src="https://via.placeholder.com/101x18" class="logo__image logo__image--title"
-                   width="101" height="18" alt="Cat energy">
+              <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Cat energy logo">
             </a>
           </div>
           <button class="menu-toggle" type="button"></button>
@@ -55,18 +52,21 @@
             <div class="container">
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field field field--text">
-                    Имя:* <input type="text" name="cat-name" placeholder="Барсик" required>
+                  <label class="form__label">
+                    Имя:* <input class="form__field field field--text" type="text" name="cat-name"
+                                 placeholder="Барсик" required>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--text">
-                    Вес (кг):* <input type="text" name="cat-weight" placeholder="7" required>
+                  <label class="form__label">
+                    Вес (кг):* <input class="form__field field field--text" type="text" name="cat-weight"
+                                      placeholder="7" required>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--text">
-                    Возраст (лет): <input type="text" name="cat-age" placeholder="7">
+                  <label class="form__label">
+                    Возраст (лет): <input class="form__field field field--text" type="text" name="cat-age"
+                                          placeholder="7">
                   </label>
                 </li>
               </ul>
@@ -77,18 +77,21 @@
               <legend class="visually-hidden">Тип программы</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field field field--radio">
-                    <input type="radio" name="program" value="losing-weight" checked> Похудение
+                  <label class="form__label">
+                    <input class="form__field field field--radio" type="radio" name="program" value="losing-weight"
+                           checked> Похудение
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--radio">
-                    <input type="radio" name="program" value="gain-weight"> Набор массы
+                  <label class="form__label">
+                    <input class="form__field field field--radio" type="radio" name="program" value="gain-weight">
+                    Набор массы
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--radio">
-                    <input type="radio" name="program" value="unknown"> Не знаю (нужен ваш совет)
+                  <label class="form__label">
+                    <input class="form__field field field--radio" type="radio" name="program" value="unknown">
+                    Не знаю (нужен ваш совет)
                   </label>
                 </li>
               </ul>
@@ -99,13 +102,13 @@
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field field field--text">
-                    E-mail:* <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <label class="form__label">
+                    E-mail:* <input class="form__field field field--text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--text">
-                    Телефон:* <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <label class="form__label">
+                    Телефон:* <input class="form__field field field--text" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                   </label>
                 </li>
               </ul>
@@ -116,9 +119,10 @@
               <legend class="form__legend">Комментарий</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field field field--textarea">
+                  <label class="form__label">
                     <span class="visually-hidden">Комментарий:</span>
-                    <textarea name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+                    <textarea class="form__field field field--textarea" name="comment" rows="5"
+                              placeholder="Расскажите обо всех повадках кота"></textarea>
                   </label>
                 </li>
               </ul>
@@ -129,23 +133,24 @@
               <legend class="form__legend">Дополнительно</legend>
               <ul class="form__list">
                 <li class="form__item">
-                  <label class="form__field field field--checkbox">
-                    <input type="checkbox" name="sweetener" checked> Сахарозаменитель
+                  <label class="form__label">
+                    <input class="form__field field field--checkbox" type="checkbox" name="sweetener"
+                           checked> Сахарозаменитель
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--checkbox">
-                    <input type="checkbox" name="water"> Питьевая вода
+                  <label class="form__label">
+                    <input class="form__field field field--checkbox" type="checkbox" name="water"> Питьевая вода
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--checkbox">
-                    <input type="checkbox" name="milk"> Молоко
+                  <label class="form__label">
+                    <input class="form__field field field--checkbox" type="checkbox" name="milk"> Молоко
                   </label>
                 </li>
                 <li class="form__item">
-                  <label class="form__field field field--checkbox">
-                    <input type="checkbox" name="vitamins"> Витамины
+                  <label class="form__label">
+                    <input class="form__field field field--checkbox" type="checkbox" name="vitamins"> Витамины
                   </label>
                 </li>
               </ul>
