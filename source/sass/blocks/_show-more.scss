@@ -1,0 +1,18 @@
+.show-more__title {
+  margin: 0;
+
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $main-text-color;
+}
+
+.show-more__description {
+  font-family: $secondary-font;
+  font-size: 12px;
+  text-align: center;
+  color: $secondary-text-color;
+
+  margin: 0;
+}

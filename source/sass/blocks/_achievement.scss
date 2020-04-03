@@ -1,0 +1,32 @@
+.achievement__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.achievement__value {
+  font-size: 24px;
+  text-align: center;
+  color: $main-text-color;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.achievement__name {
+  font-family: $secondary-font;
+  font-size: 12px;
+  text-align: center;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.achievement__cost {
+  font-size: 14px;
+  text-align: center;
+  color: $main-text-color;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  margin: 0;
+}

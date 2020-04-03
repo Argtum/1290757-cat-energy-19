@@ -1,0 +1,22 @@
+.menu-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu-list__item {
+  border-bottom: 1px solid #d9d9d9;
+
+  text-align: center;
+}
+
+.menu-list__link {
+  font-size: 20px;
+  font-weight: 500;
+  color: $main-text-color;
+  text-transform: uppercase;
+
+  display: block;
+  padding: 20px;
+  width: 100%;
+}

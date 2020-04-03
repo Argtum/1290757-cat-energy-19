@@ -2,41 +2,41 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <div class="page-header__logo logo">
-          <a href="index.html" class="logo__link">
-            <img src="https://via.placeholder.com/33x38" class="logo__image logo__image--icon" width="33" height="38"
-                 alt="Cat energy logo">
-            <img src="https://via.placeholder.com/101x18" class="logo__image logo__image--title" width="101" height="18"
-                 alt="Cat energy">
-          </a>
-        </div>
-
-        <button class="menu-toggle" type="button"></button>
-
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
+      <div class="page-header__container">
+        <div class="container">
+          <div class="page-header__logo logo">
+            <a href="index.html" class="logo__link">
+              <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Cat energy logo">
+            </a>
           </div>
-        </nav>
+          <button class="menu-toggle" type="button"></button>
+        </div>
       </div>
+
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <main class="page-catalog">
+    <main class="page-main">
       <h1 class="visually-hidden">Cat energy - каталог</h1>
 
       <section class="catalog section">
@@ -234,18 +234,18 @@
               </div>
             </li>
 
-            <li class="product__item product__item--more">
+            <li class="product__item show-more">
               <div class="container">
-                <h3 class="product__title">Показать ещё 100500 товаров</h3>
-                <p class="product__description">На самом деле вкусов гораздо больше!</p>
-                <a href="#" class="product__button button button--light">Показать все</a>
+                <h3 class="show-more__title">Показать ещё 100500 товаров</h3>
+                <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
+                <a href="#" class="show-more__button button button--light">Показать все</a>
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="addition">
+      <section class="addition section section--addition">
         <div class="container">
           <h2 class="addition__title">Дополнительные товары</h2>
           <div class="addition__product product">
@@ -292,15 +292,19 @@
               </li>
             </ul>
           </div>
-          <div class="addition__price">
-            <p class="addition__price-text">Закажите всё и получите чехол для кота в подарок!</p>
+          <div class="addition__price price">
+            <p class="price__text">
+              Закажите всё<br>
+              и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
 
       <section class="contact">
-        <h2 class="contact__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="container">
+          <h2 class="contact__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
         <div class="contact__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.218587316195!2d30.312790631577727!3d59.93862511774334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580335393804!5m2!1sru!2sru"
                   width="320" height="400" style="border:0;" allowfullscreen=""></iframe>
@@ -322,23 +326,23 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="https://vk.com/" class="social__link social__link--vk"></a>
+              <a href="https://vk.com/" class="social__link social__link--vk">vk</a>
             </li>
             <li class="social__item">
-              <a href="https://www.instagram.com/" class="social__link social__link--instagram"></a>
+              <a href="https://www.instagram.com/" class="social__link social__link--instagram">instagram</a>
             </li>
             <li class="social__item">
-              <a href="https://www.facebook.com/" class="social__link social__link--facebook"></a>
+              <a href="https://www.facebook.com/" class="social__link social__link--facebook">facebook</a>
             </li>
           </ul>
         </div>
 
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive"
-             class="page-footer__copyright-link page-footer__copyright-link--text">HTML Academy</a>
+             class="copyright__link copyright__link--text">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive"
-             class="page-footer__copyright-link page-footer__copyright-link--logo">
-            <img class="page-footer__copyright-image" src="https://via.placeholder.com/27x34" width="27" height="34"
+             class="copyright__link copyright__link--logo">
+            <img class="copyright__image" src="https://via.placeholder.com/27x34" width="27" height="34"
                  alt="HTML Academy">
           </a>
         </div>

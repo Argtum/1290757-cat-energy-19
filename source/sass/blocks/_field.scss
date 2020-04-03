@@ -1,0 +1,20 @@
+.field {
+  &--text,
+  &--texttextarea,
+  &--checkbox,
+  &--radio {
+    padding: 15px 15px 12px;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.13;
+      color: $secondary-text-color;
+      text-transform: uppercase;
+    }
+  }
+
+  &--text {
+    margin-left: 10px;
+  }
+}
