@@ -1,7 +1,7 @@
 .food-program-card {
   width: 100%;
   background-color: $secondary-color;
-  padding: 22px;
+  padding: 22px 20px;
 }
 
 .food-program-card__title {
@@ -16,11 +16,11 @@
 .food-program-card__description {
   font-family: $secondary-font;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 18px;
   color: $secondary-text-color;
   font-weight: normal;
 
-  margin: 40px 0 0;
+  margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -32,5 +32,4 @@
   font-weight: normal;
 
   display: block;
-  margin-top: 20px;
 }

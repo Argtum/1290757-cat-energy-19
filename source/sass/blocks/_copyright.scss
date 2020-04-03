@@ -1,6 +1,16 @@
+.copyright {
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .copyright__link {
   font-family: $secondary-font;
   font-size: 16px;
   font-weight: normal;
   color: $secondary-text-color;
+
+  display: block;
 }

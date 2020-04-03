@@ -3,3 +3,15 @@
   padding-left: 0;
   list-style: none;
 }
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__toggle {
+  margin-top: 32px;
+}

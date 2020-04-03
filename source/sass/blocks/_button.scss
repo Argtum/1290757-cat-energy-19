@@ -1,14 +1,14 @@
 .button {
   display: block;
   width: 100%;
-  padding: 11px 15px 11px;
+  padding: 12px 15px 11px;
   border: none;
 
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 17.5px;
 
   &--green {
     background-color: $main-color;

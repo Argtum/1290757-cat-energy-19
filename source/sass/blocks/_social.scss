@@ -1,5 +1,20 @@
+.social {
+  padding: 20px;
+}
+
 .social__list {
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

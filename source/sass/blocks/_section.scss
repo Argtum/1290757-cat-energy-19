@@ -1,9 +1,23 @@
 .section {
-  padding: 30px 0;
+  padding: 25px 0;
 
   &--cat-food,
   &--addition {
     padding-top: 0;
+  }
+
+  &--advantage {
+    padding-bottom: 40px;
+  }
+
+  &--living-example {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  &--contact {
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -11,10 +25,11 @@
   font-size: 36px;
   color: $main-text-color;
   font-weight: normal;
+  line-height: 36px;
 
   margin: 0;
 
-  &--white {
+  &--cat-food {
     text-align: center;
     color: #ffffff;
   }
@@ -23,17 +38,21 @@
 .section__description {
   font-family: $secondary-font;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 18px;
   color: $secondary-text-color;
   font-weight: normal;
 
-  margin: 35px 0 0;
+  margin: 0;
 
   &--program-selection {
     font-family: inherit;
     color: $main-text-color;
     text-transform: uppercase;
+  }
 
-    margin: 35px 0 0;
+  &--cat-food {
+    font-family: inherit;
+    color: #ffffff;
+    text-transform: uppercase;
   }
 }

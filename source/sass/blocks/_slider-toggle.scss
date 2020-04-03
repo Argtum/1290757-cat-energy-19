@@ -1,3 +1,20 @@
+.slider-toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-toggle__range {
+  width: 84px;
+  height: 14px;
+
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+
+  background-color: #ffffff;
+
+  margin: 1px 18px 0;
+}
+
 .slider-toggle__signature {
   font-size: 16px;
   color: $main-text-color;

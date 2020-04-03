@@ -1,44 +1,52 @@
 .contact {
   background-color: $secondary-color;
-  padding: 31px 0 0;
 
   &--main {
     background-color: #ffffff;
   }
 }
 
-.contact__title {
-  margin: 0;
+.contact__text-container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.contact__title {
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 20px;
   color: $main-text-color;
   text-transform: uppercase;
+
+  margin: 0;
+  width: 123px;
 }
 
 .contact__address {
   font-family: $secondary-font;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.43;
+  line-height: 20px;
   color: $secondary-text-color;
 
   margin: 0;
+  width: 135px;
+}
+
+.contact__map-container {
+  position: relative;
+
+  margin-top: 25px;
 }
 
 .contact__map {
-  position: relative;
-}
-
-.contact__map iframe {
   position: relative;
   z-index: 2;
 
   border: none;
 }
 
-.contact__map img {
+.contact__map-image {
   margin: 0;
 
   position: absolute;

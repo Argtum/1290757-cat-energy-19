@@ -1,9 +1,23 @@
+.features {
+  display: flex;
+}
+
+.features__image-container {
+  background-color: $main-color;
+
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
 .features__text {
   font-family: $secondary-font;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 18px;
   color: $secondary-text-color;
   font-weight: normal;
 
   margin: 0;
+
+  width: 200px;
 }

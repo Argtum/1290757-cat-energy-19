@@ -3,6 +3,7 @@
 @import "variables";
 @import "common";
 
+@import "blocks/section";
 @import "blocks/achievement";
 @import "blocks/addition";
 @import "blocks/button";
@@ -14,7 +15,6 @@
 @import "blocks/field";
 @import "blocks/food-program-card";
 @import "blocks/form";
-@import "blocks/how-it-work";
 @import "blocks/living-example";
 @import "blocks/logo";
 @import "blocks/main-nav";
@@ -26,7 +26,6 @@
 @import "blocks/product";
 @import "blocks/program-selection";
 @import "blocks/program-type";
-@import "blocks/section";
 @import "blocks/slider";
 @import "blocks/slider-toggle";
 @import "blocks/social";
@@ -34,3 +33,4 @@
 @import "blocks/features";
 @import "blocks/show-more";
 @import "blocks/price";
+@import "blocks/advantage";
