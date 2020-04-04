@@ -1,9 +1,13 @@
 .section {
   padding: 25px 0;
 
-  &--cat-food,
+  &--cat-food {
+    padding-top: 0;
+  }
+
   &--addition {
     padding-top: 0;
+    padding-bottom: 35px;
   }
 
   &--advantage {
@@ -18,6 +22,10 @@
   &--contact {
     padding-top: 30px;
     padding-bottom: 0;
+
+    &--catalog {
+      padding-top: 28px;
+    }
   }
 }
 

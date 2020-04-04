@@ -1,15 +1,32 @@
+.product__wrapper {
+  display: flex;
+}
+
 .product__list {
   padding-left: 0;
   list-style: none;
-  margin: 30px 0 0;
+  margin: 33px 0 0;
 }
 
 .product__item {
   border-bottom: 1px solid #d9d9d9;
-  padding: 25px 0;
+  padding-bottom: 22px;
 
   &:first-child {
     border-top: 1px solid #d9d9d9;
+  }
+
+  &--addition {
+    padding: 11px 0 15px;
+  }
+}
+
+.product__link {
+  display: block;
+
+  &--name {
+    margin-top: 23px;
+    width: 74px;
   }
 }
 
@@ -20,4 +37,16 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.product__options {
+  margin-top: 11px;
+}
+
+.product__button {
+  display: block;
+
+  &--addition {
+    margin-top: 12px;
+  }
 }
