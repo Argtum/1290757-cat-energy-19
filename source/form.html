@@ -41,11 +41,12 @@
     <main class="page-main">
       <h1 class="visually-hidden">Cat energy - подбор программы</h1>
 
-      <section class="program-selection section">
+      <section class="program-selection section section--program-selection">
         <div class="container">
           <h2 class="program-selection__title section__title">Подбор программы</h2>
           <p class="program-selection__description section__description section__description--program-selection">
-            Заполните анкету и мы подберём программу питания для вашего кота
+            Заполните анкету и мы подберём<br>
+            программу питания для вашего кота
           </p>
         </div>
         <form class="program-selection__form form" method="post" action="https://echo.htmlacademy.ru">
@@ -74,35 +75,38 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--no-title">
+          <fieldset class="form__fieldset form__fieldset--chose-program form__fieldset--no-title">
             <div class="container">
               <legend class="visually-hidden">Тип программы</legend>
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__label">
-                    <input class="form__field field field--radio" type="radio" name="program" value="losing-weight"
-                           checked> Похудение
+                    <input class="form__field form__field--radio field field--radio" type="radio" name="program"
+                           value="losing-weight" checked>
+                    Похудение
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label">
-                    <input class="form__field field field--radio" type="radio" name="program" value="gain-weight">
+                    <input class="form__field field form__field--radio field--radio" type="radio" name="program"
+                           value="gain-weight">
                     Набор массы
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label">
-                    <input class="form__field field field--radio" type="radio" name="program" value="unknown">
+                    <input class="form__field field form__field--radio field--radio" type="radio" name="program"
+                           value="unknown">
                     Не знаю (нужен ваш совет)
                   </label>
                 </li>
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--master-data">
             <div class="container">
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--master-data">
                 <li class="form__item">
                   <label class="form__label">
                     E-mail:* <input class="form__field field field--text" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -116,10 +120,10 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--comment">
             <div class="container">
               <legend class="form__legend">Комментарий</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--comment">
                 <li class="form__item">
                   <label class="form__label">
                     <span class="visually-hidden">Комментарий:</span>
@@ -130,27 +134,27 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--extra">
             <div class="container">
               <legend class="form__legend">Дополнительно</legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--extra">
+                <li class="form__item form__item--extra">
                   <label class="form__label">
                     <input class="form__field field field--checkbox" type="checkbox" name="sweetener"
                            checked> Сахарозаменитель
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--extra">
                   <label class="form__label">
                     <input class="form__field field field--checkbox" type="checkbox" name="water"> Питьевая вода
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--extra">
                   <label class="form__label">
                     <input class="form__field field field--checkbox" type="checkbox" name="milk"> Молоко
                   </label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--extra">
                   <label class="form__label">
                     <input class="form__field field field--checkbox" type="checkbox" name="vitamins"> Витамины
                   </label>
@@ -158,7 +162,7 @@
               </ul>
             </div>
           </fieldset>
-          <div class="container">
+          <div class="form__button-container container">
             <button class="form__button button button--green" type="submit">Отправить заявку</button>
             <p class="form__description">* &#8212; Обязательные поля</p>
           </div>
