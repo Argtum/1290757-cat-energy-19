@@ -7,15 +7,15 @@
 }
 
 .cat-food__description {
-  font-size: 14px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: normal;
-
   margin: 25px 0 0;
 }
 
 .cat-food__image {
   margin-top: -140px;
+}
+
+@media (min-width: $tablet) {
+  .cat-food__container {
+    background-color: unset;
+  }
 }

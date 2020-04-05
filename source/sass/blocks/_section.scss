@@ -66,5 +66,22 @@
     font-family: inherit;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: $tablet) {
+  .section__title {
+    &--cat-food {
+      color: $main-text-color;
+    }
+  }
+
+  .section__description {
+    &--cat-food {
+      color: $main-text-color;
+    }
   }
 }

@@ -19,3 +19,18 @@
 .advantage__text {
   margin-left: 20px;
 }
+
+@media (min-width: $tablet) {
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantage__item {
+    margin-top: 0;
+  }
+
+  .advantage__text {
+    margin-left: 0;
+  }
+}

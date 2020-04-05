@@ -20,3 +20,13 @@
   padding: 21px 20px;
   width: 100%;
 }
+
+@media (min-width: $tablet) {
+  .menu-list {
+    display: flex;
+  }
+
+  .menu-list__item {
+    border-bottom: none;
+  }
+}

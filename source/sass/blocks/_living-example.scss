@@ -14,3 +14,10 @@
 .living-example__slider {
   margin-top: 35px;
 }
+
+@media (min-width: $tablet) {
+  .living-example__achievement {
+    display: flex;
+    justify-content: space-between;
+  }
+}

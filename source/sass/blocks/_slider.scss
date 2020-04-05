@@ -15,3 +15,10 @@
 .slider__toggle {
   margin-top: 32px;
 }
+
+@media (min-width: $tablet) {
+  .slider__item {
+    display: flex;
+    justify-content: center;
+  }
+}

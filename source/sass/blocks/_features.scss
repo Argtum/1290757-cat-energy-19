@@ -21,3 +21,12 @@
 
   width: 200px;
 }
+
+@media (min-width: $tablet) {
+  .features {
+    width: 245px;
+    height: 235px;
+
+    flex-direction: column;
+  }
+}
