@@ -1,6 +1,7 @@
 .menu-toggle {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   width: 25px;
   height: 19px;
@@ -27,7 +28,7 @@
   &::after {
     content: url("../img/icon-mobile-menu.svg");
     width: 25px;
-    height: 19px
+    height: 19px;
   }
 
   &--opened {
