@@ -3,6 +3,7 @@
 
   &--cat-food {
     padding-top: 0;
+    padding-bottom: 22px;
   }
 
   &--addition {
@@ -73,15 +74,38 @@
 }
 
 @media (min-width: $tablet) {
-  .section__title {
+  .section {
     &--cat-food {
+      padding-bottom: 0;
+    }
+  }
+
+  .section__title {
+    font-size: 60px;
+
+    &--cat-food {
+      text-align: left;
       color: $main-text-color;
+      line-height: 60px;
+
+      width: 415px;
     }
   }
 
   .section__description {
     &--cat-food {
+      font-size: 20px;
+      text-align: left;
       color: $main-text-color;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .section {
+    &--cat-food {
+      display: flex;
+      justify-content: left;
     }
   }
 }

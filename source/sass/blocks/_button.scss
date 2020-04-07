@@ -25,3 +25,22 @@
     font-size: 14px;
   }
 }
+
+@media (min-width: $tablet) {
+  .button {
+    &--cat-food {
+      width: 245px;
+      padding: 17px 15px 18px;
+
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .button {
+    &--cat-food {
+      top: 53px;
+    }
+  }
+}

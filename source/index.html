@@ -23,17 +23,17 @@
           <nav class="main-nav main-nav--no-js">
             <div class="main-nav__wrapper">
               <ul class="main-nav__list menu-list">
-                <li class="menu-list__item menu-list__item--current">
+                <li class="menu-list__item menu-list__item--main menu-list__item--current">
                   <a class="menu-list__link" href="index.html">
                     <span class="menu-list__link-text">Главная</span>
                   </a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item menu-list__item--main">
                   <a class="menu-list__link" href="catalog.html">
                     <span class="menu-list__link-text">Каталог продукции</span>
                   </a>
                 </li>
-                <li class="menu-list__item">
+                <li class="menu-list__item menu-list__item--main">
                   <a class="menu-list__link" href="form.html">
                     <span class="menu-list__link-text">Подбор программы</span>
                   </a>
@@ -49,17 +49,17 @@
       <h1 class="visually-hidden">Cat energy</h1>
 
       <section class="cat-food section section--cat-food">
-        <div class="cat-food__container container">
-          <h2 class="cat-food__title section__title section__title--cat-food">Функциональное питание для котов</h2>
-          <p class="cat-food__description section__description section__description--cat-food">Занялся собой? Займись котом!</p>
-        </div>
-
+        <div class="cat-food__background"></div>
         <div class="container">
+          <div class="cat-food__container">
+            <h2 class="cat-food__title section__title section__title--cat-food">Функциональное питание для котов</h2>
+            <p class="cat-food__description section__description section__description--cat-food">Занялся собой? Займись котом!</p>
+            <a href="catalog.html" class="cat-food__button button button--green button--small-text button--cat-food">
+              Подобрать программу
+            </a>
+          </div>
           <img class="cat-food__image" src="img/index-can-mobile@1x.png" width="280" height="271"
                alt="cat pro energy - курица">
-          <a href="catalog.html" class="cat-food__button button button--green button--small-text">
-            Подобрать программу
-          </a>
         </div>
       </section>
 
@@ -85,7 +85,8 @@
         </ul>
       </section>
 
-      <section class="advantage section section--advantage container">
+      <section class="advantage section section--advantage">
+        <div class="container">
           <h2 class="advantage__title section__title">Как это работает</h2>
           <div class="advantage__features">
             <ul class="advantage__list">
@@ -127,6 +128,7 @@
               </li>
             </ul>
           </div>
+        </div>
       </section>
 
       <section class="living-example section section--living-example">
