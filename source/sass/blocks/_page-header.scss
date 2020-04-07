@@ -16,6 +16,21 @@
   }
 
   .page-header__container {
-    border-bottom: none;
+    padding: 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    margin-top: 53px;
+  }
+
+  .page-header__container {
+    width: 100%;
   }
 }

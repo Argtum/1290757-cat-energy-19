@@ -42,9 +42,13 @@
   .menu-list__item {
     border-bottom: none;
 
+    &:first-child {
+      border-top: none;
+    }
+
     &--current {
       .menu-list__link-text {
-        padding-bottom: 5px;
+        padding-bottom: 8px;
         border-bottom: 2px solid $main-color;
       }
     }
@@ -53,5 +57,21 @@
   .menu-list__link {
     font-size: 18px;
     padding: 20px 20px 20px 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .menu-list__link {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .menu-list__item {
+    &--current {
+      .menu-list__link-text {
+        padding-bottom: 9px;
+        border-bottom: 2px solid #ffffff;
+      }
+    }
   }
 }
