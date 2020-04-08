@@ -1,5 +1,9 @@
 .social {
   padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .social__list {
@@ -16,5 +20,11 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .social {
+    padding: 0;
   }
 }
