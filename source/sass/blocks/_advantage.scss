@@ -18,19 +18,51 @@
 
 .advantage__text {
   margin-left: 20px;
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet) {
+  .advantage {
+    margin-top: 0;
+  }
+
   .advantage__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+
+    margin-top: 70px;
   }
 
   .advantage__item {
     margin-top: 0;
+    margin-right: 80px;
+
+    &:nth-child(n+3) {
+      margin-top: 83px;
+    }
   }
 
   .advantage__text {
     margin-left: 0;
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantage__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 72px;
+  }
+
+  .advantage__item {
+    margin-top: 0;
+    margin-right: 0;
+
+    &:nth-child(n+3) {
+      margin-top: 0;
+    }
   }
 }

@@ -78,10 +78,18 @@
     &--cat-food {
       padding-bottom: 0;
     }
+
+    &--advantage {
+      padding-top: 45px;
+      padding-bottom: 50px;
+
+      border-bottom: 1px solid #d9d9d9;
+    }
   }
 
   .section__title {
     font-size: 60px;
+    line-height: 60px;
 
     &--cat-food {
       text-align: left;
@@ -106,6 +114,13 @@
     &--cat-food {
       display: flex;
       justify-content: left;
+    }
+
+    &--advantage {
+      padding-top: 72px;
+      padding-bottom: 50px;
+
+      border-bottom: none;
     }
   }
 }
