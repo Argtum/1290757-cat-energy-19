@@ -1,0 +1,84 @@
+.program-card {
+  width: 100%;
+  background-color: $secondary-color;
+  padding: 22px 20px;
+}
+
+.program-card__title {
+  font-size: 24px;
+  color: $main-text-color;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  margin: 0;
+}
+
+.program-card__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $secondary-text-color;
+  font-weight: normal;
+
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program-card__link {
+  font-size: 16px;
+  color: $main-text-color;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .program-card {
+    padding: 72px 53px 60px;
+  }
+
+  .program-card__title {
+    font-size: 36px;
+  }
+
+  .program-card__description {
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 375px;
+    padding-bottom: 0;
+
+    border-bottom: none;
+
+    &--mass-gain {
+      width: 340px;
+    }
+  }
+
+  .program-card__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .program-card {
+    width: 570px;
+    min-height: 372px;
+    padding: 74px 52px 60px;
+  }
+
+  .program-card__title {
+    padding-left: 161px;
+  }
+
+  .program-card__description {
+    width: unset;
+
+    &--mass-gain {
+      width: unset;
+    }
+  }
+}
+
