@@ -6,21 +6,25 @@
   padding-left: 0;
   list-style: none;
   margin: 0;
+
+  &--addition {
+    margin-top: 33px;
+  }
 }
 
 .product__item {
   border-bottom: 1px solid #d9d9d9;
 
-  padding: 0 20px 22px;
-  margin-left: -20px;
-  margin-right: -20px;
+  padding: 11px 0 16px;
 
   &:first-child {
     border-top: 1px solid #d9d9d9;
   }
 
-  &--addition {
-    padding: 11px 0 15px;
+  &--main {
+    padding: 0 20px 22px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
 
@@ -34,49 +38,76 @@
 
 .product__name {
   margin: 0;
-  width: 74px;
 
   font-size: 16px;
   color: $main-text-color;
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+
+  &--main {
+    width: 74px;
+  }
 }
 
 .product__options {
-  margin-top: 12px;
+  margin-top: 7px;
+
+  &--main {
+    margin-top: 12px;
+  }
 }
 
 .product__button {
   display: block;
+  margin-top: 11px;
 
-  &--addition {
-    margin-top: 12px;
+  &--main {
+    margin-top: 0;
   }
 }
 
 @media (min-width: $tablet) {
   .product__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    &--main {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &--addition {
+      margin-top: 0;
+    }
   }
 
   .product__item {
-    border-bottom: none;
+    border: 1px solid #d9d9d9;
 
-    min-height: 431px;
-    max-width: 324px;
-    width: 100%;
-    margin: 140px 0 0;
-    padding: 0 37px 22px 38px;
+    &--main {
+      border: none;
 
-    background-color: $secondary-color;
-    position: relative;
+      min-height: 431px;
+      max-width: 324px;
+      width: 100%;
+      margin: 140px 0 0;
+      padding: 0 37px 22px 38px;
 
-    &:first-child {
-      border-top: none;
+      background-color: $secondary-color;
+      position: relative;
+
+      &:first-child {
+        border-top: none;
+      }
     }
+
+    &--addition {
+      padding: 26px 36px 26px 37px;
+    }
+  }
+
+  .product__container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .product__link {
@@ -114,6 +145,10 @@
   }
 
   .product__button {
-    margin-top: 30px;
+    margin-top: 22px;
+
+    &--main {
+      margin-top: 30px;
+    }
   }
 }

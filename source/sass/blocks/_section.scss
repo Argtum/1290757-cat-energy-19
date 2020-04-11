@@ -85,6 +85,17 @@
 
       border-bottom: 1px solid #d9d9d9;
     }
+
+    &--addition {
+      padding-top: 39px;
+      padding-bottom: 76px;
+    }
+
+    &--contact {
+      &--catalog {
+        padding-top: 0;
+      }
+    }
   }
 
   .section__title {

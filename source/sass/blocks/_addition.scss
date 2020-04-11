@@ -9,3 +9,36 @@
   font-weight: normal;
   color: $main-text-color;
 }
+
+@media (min-width: $tablet) {
+  .addition__title {
+    font-size: 36px;
+
+    width: 415px;
+    padding: 0 35px;
+    background-color: #ffffff;
+
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      z-index: -1;
+      top: 24px;
+      left: -30px;
+
+      height: 3px;
+      width: 100vw;
+      background-color: $main-color;
+    }
+  }
+
+  .addition__product {
+    margin-top: 78px;
+  }
+
+  .addition__price {
+    margin-top: 70px;
+  }
+}

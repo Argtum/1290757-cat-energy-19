@@ -1,7 +1,13 @@
 .table {
   font-family: $secondary-font;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
+
+  width: 100%;
+
+  &--main {
+    font-size: 12px;
+  }
 }
 
 .table__row {
@@ -21,9 +27,29 @@
 
 @media (min-width: $tablet) {
   .table {
-    width: 100%;
-
     font-size: 16px;
+
+    &--addition {
+      margin-top: 3px;
+      margin-right: -3px;
+      width: 229px;
+
+      border-collapse: collapse;
+
+      .table__row {
+        border-bottom: none;
+
+        width: 100%;
+        padding: 0;
+
+        justify-content: flex-end;
+      }
+
+      .table__cell {
+        min-width: 95px;
+        text-align: right;
+      }
+    }
   }
 
   .table__row {

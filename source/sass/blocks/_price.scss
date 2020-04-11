@@ -15,3 +15,19 @@
 
   margin: 0;
 }
+
+@media (min-width: $tablet) {
+  .price {
+    height: 200px;
+    padding: 1px 0 0;
+  }
+
+  .price__text {
+    width: 165px;
+    text-align: left;
+
+    margin-left: auto;
+    margin-right: 120px;
+    margin-top: 71px;
+  }
+}
