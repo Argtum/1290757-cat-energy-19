@@ -1,7 +1,17 @@
 .catalog__title {
-  margin: 0;
+  margin: 1px 0 0;
 }
 
 .catalog__product {
   margin-top: 40px;
+}
+
+@media (min-width: $tablet) {
+  .catalog__title {
+    margin-top: 30px;
+  }
+
+  .catalog__product {
+    margin-top: 26px;
+  }
 }

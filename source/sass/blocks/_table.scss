@@ -3,3 +3,34 @@
   font-size: 12px;
   font-weight: normal;
 }
+
+.table__row {
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 143px;
+  width: 100%;
+  margin: 0 -4px 1px -3px;
+}
+
+.table__cell {
+  &--currency {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet) {
+  .table {
+    width: 100%;
+
+    font-size: 16px;
+  }
+
+  .table__row {
+    margin: 0 0 0 -2px;
+    padding: 6px 0 5px;
+    width: 250px;
+
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
