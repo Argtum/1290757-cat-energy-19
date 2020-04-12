@@ -13,10 +13,6 @@
   color: $secondary-text-color;
 
   display: block;
-
-  &--text {
-    padding-bottom: 4px;
-  }
 }
 
 @media (min-width: $tablet) {
