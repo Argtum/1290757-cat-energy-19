@@ -1,5 +1,7 @@
 .show-more {
   padding: 25px 20px;
+
+  position: relative;
 }
 
 .show-more__title {
@@ -23,6 +25,12 @@
 
 .show-more__button {
   margin-top: 22px;
+}
+
+.show-more__icon {
+  position: absolute;
+  top: 26px;
+  left: calc(50% - 15px);
 }
 
 @media (min-width: $tablet) {
@@ -53,6 +61,12 @@
 
   .show-more__button {
     margin-top: 84px;
+  }
+
+  .show-more__icon {
+    position: absolute;
+    top: 55px;
+    left: calc(50% - 30px);
   }
 }
 

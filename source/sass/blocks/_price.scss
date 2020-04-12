@@ -3,6 +3,8 @@
 
   height: 289px;
   padding: 187px 43px 60px;
+
+  position: relative;
 }
 
 .price__text {
@@ -14,6 +16,12 @@
   color: #ffffff;
 
   margin: 0;
+}
+
+.price__icon {
+  position: absolute;
+  top: 65px;
+  left: calc(50% - 28px);
 }
 
 @media (min-width: $tablet) {
@@ -30,6 +38,12 @@
     margin-right: 120px;
     margin-top: 71px;
   }
+
+  .price__icon {
+    position: absolute;
+    top: 65px;
+    left: 91px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -42,5 +56,11 @@
   .price__text {
     text-align: center;
     margin-top: 147px;
+  }
+
+  .price__icon {
+    position: absolute;
+    top: 65px;
+    left: calc(50% - 28px);
   }
 }
