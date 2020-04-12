@@ -31,3 +31,16 @@
     margin-top: 71px;
   }
 }
+
+@media (min-width: $desktop) {
+  .price {
+    width: 245px;
+    height: 289px;
+    padding: 40px;
+  }
+
+  .price__text {
+    text-align: center;
+    margin-top: 147px;
+  }
+}

@@ -36,7 +36,8 @@
     }
 
     &--show-all {
-      width: 249px;
+      max-width: 249px;
+      width: 100%;
     }
   }
 }
