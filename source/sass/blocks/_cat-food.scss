@@ -5,7 +5,7 @@
 .cat-food__background {
   background-color: $main-color;
 
-  height: 305px;
+  height: calc(100% - 200px);
   width: 100%;
 
   position: absolute;
@@ -13,7 +13,8 @@
 }
 
 .cat-food__container {
-  padding-top: 26px;
+  padding: 26px 0;
+  min-height: 138px;
 }
 
 .cat-food__description {
@@ -21,14 +22,16 @@
 }
 
 .cat-food__button {
-  margin-top: 300px;
+  position: absolute;
+  bottom: 23px;
 }
 
 .cat-food__image {
   display: block;
 
   position: absolute;
-  top: 166px;
+  bottom: 67px;
+  left: calc(50% - 140px);
 }
 
 @media (min-width: $tablet) {
@@ -38,6 +41,7 @@
 
   .cat-food__container {
     padding: 56px 0 0 87px;
+    min-height: 177px;
   }
 
   .cat-food__description {
@@ -45,13 +49,15 @@
   }
 
   .cat-food__button {
-    margin-top: 49px;
-    margin-bottom: 530px;
+    bottom: 529px;
+
     margin-left: 2px;
   }
 
   .cat-food__image {
-    top: 256px;
+    left: calc(50% - 355px);
+    bottom: 0;
+
     height: 609px;
     width: 709px;
 
@@ -61,17 +67,21 @@
 
 @media (min-width: $desktop) {
   .cat-food__background {
+    background-color: $main-color;
+    position: absolute;
+    z-index: -1;
+
     display: block;
     height: 696px;
-    width: 720px;
+    width: 50%;
 
     top: -117px;
     right: 0;
   }
 
   .cat-food__container {
-    padding-top: 105px;
-    padding-left: 80px;
+    padding: 105px 0 0 80px;
+    width: 410px;
   }
 
   .cat-food__description {
@@ -79,8 +89,9 @@
   }
 
   .cat-food__button {
+    position: static;
+
     margin-top: 54px;
-    margin-bottom: 268px;
     margin-left: 0;
   }
 
@@ -89,6 +100,6 @@
     height: 499px;
 
     top: 25px;
-    left: 585px;
+    left: calc(50% - 135px);
   }
 }
