@@ -6,22 +6,37 @@
 .slider-toggle__range {
   width: 84px;
   height: 14px;
+  margin: 1px 18px 0;
+  padding: 3px 5px;
 
   border-radius: 6px;
   border: solid 1px #cdcdcd;
 
   background-color: #ffffff;
-
-  margin: 1px 18px 0;
 }
 
-.slider-toggle__signature {
+.slider-toggle__marker {
+  width: 35px;
+  height: 6px;
+
+  border-radius: 3px;
+  background-color: $main-color;
+
+  &--after {
+    margin-left: auto;
+  }
+}
+
+.slider-toggle__button {
   font-size: 16px;
   color: $main-text-color;
   text-transform: uppercase;
   font-weight: normal;
 
+  display: block;
   margin: 0;
+
+  cursor: pointer;
 
   &--before {
     text-align: left;
