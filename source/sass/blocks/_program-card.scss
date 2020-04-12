@@ -34,6 +34,11 @@
   display: block;
 }
 
+.program-card__link-img {
+  margin-left: 7px;
+  margin-bottom: 2px;
+}
+
 @media (min-width: $tablet) {
   .program-card {
     padding: 72px 53px 60px;
@@ -47,26 +52,35 @@
     font-size: 16px;
     line-height: 24px;
 
-    width: 375px;
+    padding-right: 230px;
     padding-bottom: 0;
 
     border-bottom: none;
 
     &--mass-gain {
-      width: 340px;
+      padding-right: 260px;
     }
   }
 
   .program-card__link {
     font-size: 20px;
   }
+
+  .program-card__link-img {
+    margin-left: 18px;
+  }
 }
 
 @media (min-width: $desktop) {
   .program-card {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     min-height: 372px;
     padding: 74px 52px 60px;
+
+    &:nth-child(2n-1) {
+      margin-right: 20px;
+    }
   }
 
   .program-card__title {
@@ -74,11 +88,7 @@
   }
 
   .program-card__description {
-    width: unset;
-
-    &--mass-gain {
-      width: unset;
-    }
+    padding-right: 0;
   }
 }
 
