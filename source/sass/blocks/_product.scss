@@ -60,10 +60,10 @@
 
 .product__button {
   display: block;
-  margin-top: 11px;
+  margin-top: 0;
 
-  &--main {
-    margin-top: 0;
+  &--addition {
+    margin-top: 11px;
   }
 }
 
@@ -141,10 +141,10 @@
   }
 
   .product__button {
-    margin-top: 22px;
+    margin-top: 30px;
 
-    &--main {
-      margin-top: 30px;
+    &--addition {
+      margin-top: 22px;
     }
   }
 }

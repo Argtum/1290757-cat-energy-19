@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script>document.createElement( "picture" );</script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -13,8 +16,12 @@
           <div class="page-header__wrapper">
             <div class="page-header__logo logo logo--header">
               <a class="logo__link">
-                <img src="img/logo-mobile.svg" class="logo__image logo__image--mobile" width="191" height="39"
-                     alt="Cat energy logo">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" class="logo__image logo__image--header" width="191" height="39"
+                       alt="Cat energy logo">
+                </picture>
               </a>
             </div>
             <button class="page-header__menu menu-toggle menu-toggle--opened" type="button"></button>
@@ -209,7 +216,7 @@
       <div class="container">
         <div class="page-footer__logo logo logo--footer">
           <a class="logo__link">
-            <img src="img/logo-footer.svg" class="logo__image logo__image--title" width="128" height="24"
+            <img src="img/logo-footer.svg" class="logo__image logo__image--footer" width="128" height="24"
               alt="Cat energy">
           </a>
         </div>
