@@ -18,7 +18,6 @@
   &--light {
     background-color: $secondary-color;
     color: $secondary-text-color;
-    padding: 12px 15px 11px;
   }
 
   &--small-text {
@@ -48,8 +47,11 @@
 
 @media (min-width: $desktop) {
   .button {
+    padding: 13px 15px 11px;
+
     &--cat-food {
       height: 52px;
+      padding: 17px 15px 18px;
     }
   }
 }

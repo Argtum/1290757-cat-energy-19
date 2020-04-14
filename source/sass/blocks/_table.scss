@@ -35,20 +35,6 @@
       width: 229px;
 
       border-collapse: collapse;
-
-      .table__row {
-        border-bottom: none;
-
-        width: 100%;
-        padding: 0;
-
-        justify-content: flex-end;
-      }
-
-      .table__cell {
-        min-width: 95px;
-        text-align: right;
-      }
     }
   }
 
@@ -57,6 +43,26 @@
     padding: 6px 0 5px;
 
     border-bottom: 1px solid #d9d9d9;
+
+    &--addition {
+      border-bottom: none;
+
+      width: 100%;
+      padding: 0;
+
+      justify-content: flex-end;
+    }
+  }
+
+  .table__cell {
+    &--addition {
+      min-width: 95px;
+      text-align: right;
+    }
+
+    &--second {
+      margin-right: -5px;
+    }
   }
 }
 
@@ -68,24 +74,28 @@
       max-width: 290px;
       width: 100%;
       margin-top: 0;
+    }
+  }
 
-      .table__row {
-        justify-content: space-between;
+  .table__row {
+    &--addition {
+      justify-content: space-between;
 
-        max-width: 290px;
-      }
+      max-width: 290px;
+    }
+  }
 
-      .table__cell {
-        text-align: left;
+  .table__cell {
+    &--addition {
+      text-align: left;
+    }
 
-        &--currency {
-          text-align: right;
-        }
+    &--currency {
+      text-align: right;
+    }
 
-        &--short-value {
-          padding-right: 9px;
-        }
-      }
+    &--short-value {
+      padding-right: 9px;
     }
   }
 }

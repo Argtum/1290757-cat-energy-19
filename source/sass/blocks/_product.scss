@@ -88,9 +88,9 @@
       border: none;
 
       min-height: 431px;
-      width: 45%;
+      width: 46%;
       margin: 140px 0 0;
-      padding: 0 37px 22px 38px;
+      padding: 0 38px 22px 38px;
 
       background-color: $secondary-color;
       position: relative;
@@ -161,7 +161,7 @@
 
     &--main {
       width: 20.1%;
-      margin: 141px 0 0;
+      margin: 142px 0 0;
     }
 
     &--addition {
@@ -171,7 +171,7 @@
 
       max-width: 895px;
       width: 100%;
-      padding: 16px 0 14px;
+      padding: 17px 0 12px;
     }
   }
 
@@ -193,5 +193,13 @@
     &--image {
       left: calc(25% - 10px);
     }
+  }
+
+  .product__wrapper {
+    margin-top: 162px;
+  }
+
+  .product__options {
+    margin-top: 18px;
   }
 }

@@ -15,10 +15,11 @@
 
 @media (min-width: $desktop) {
   .container {
-    max-width: 1220px;
+    min-width: 1220px;
+    max-width: 1300px;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

@@ -23,19 +23,15 @@
   }
 }
 
-.social__link {
+.social__icon {
   &--vk {
-    .social__icon {
-      margin-left: -2px;
-      margin-right: 2px;
-    }
+    margin-left: -2px;
+    margin-right: 2px;
   }
 
   &--instagram {
-    .social__icon {
-      margin-top: 2px;
-      margin-left: -4px;
-    }
+    margin-top: 2px;
+    margin-left: -4px;
   }
 }
 
@@ -54,28 +50,22 @@
     margin-right: 28px;
   }
 
-  .social__link {
+  .social__icon {
     &--vk {
-      .social__icon {
-        width: 30px;
-        height: 16px;
-        margin: 5px 0 0;
-      }
+      width: 30px;
+      height: 16px;
+      margin: 5px 0 0;
     }
 
     &--instagram {
-      .social__icon {
-        width: 23px;
-        height: 23px;
-        margin: 3px 0 0;
-      }
+      width: 23px;
+      height: 23px;
+      margin: 3px 0 0;
     }
 
     &--facebook {
-      .social__icon {
-        width: 14px;
-        height: 28px;
-      }
+      width: 14px;
+      height: 28px;
     }
   }
 }
