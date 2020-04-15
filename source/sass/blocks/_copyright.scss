@@ -1,6 +1,23 @@
+.copyright {
+  padding: 20px 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .copyright__link {
   font-family: $secondary-font;
   font-size: 16px;
   font-weight: normal;
   color: $secondary-text-color;
+
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    padding: 0;
+    width: 163px;
+  }
 }

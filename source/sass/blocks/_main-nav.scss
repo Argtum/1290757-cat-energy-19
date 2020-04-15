@@ -1,0 +1,16 @@
+.main-nav {
+  display: none;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  &--no-js,
+  &--opened {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-nav {
+    display: block;
+  }
+}

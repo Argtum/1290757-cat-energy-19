@@ -1,14 +1,14 @@
 .button {
   display: block;
   width: 100%;
-  padding: 11px 15px 11px;
+  padding: 12px 15px 11px;
   border: none;
 
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 17.5px;
 
   &--green {
     background-color: $main-color;
@@ -18,5 +18,40 @@
   &--light {
     background-color: $secondary-color;
     color: $secondary-text-color;
+  }
+
+  &--small-text {
+    font-size: 14px;
+  }
+
+  &--cat-food {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (min-width: $tablet) {
+  .button {
+    &--cat-food {
+      width: 245px;
+      padding: 17px 15px 18px;
+
+      font-size: 20px;
+    }
+
+    &--show-all {
+      max-width: 249px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .button {
+    padding: 13px 15px 11px;
+
+    &--cat-food {
+      height: 52px;
+      padding: 17px 15px 18px;
+    }
   }
 }

@@ -1,0 +1,45 @@
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  width: 25px;
+  height: 19px;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 12px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    content: url("../img/icon-close.svg");
+    width: 19px;
+    height: 19px;
+
+    right: 3px;
+  }
+
+  &::after {
+    content: url("../img/icon-mobile-menu.svg");
+    width: 25px;
+    height: 19px;
+  }
+
+  &--opened {
+    &::after {
+      opacity: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .menu-toggle {
+    display: none;
+  }
+}

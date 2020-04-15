@@ -1,14 +1,14 @@
 .field {
   &--text,
-  &--texttextarea,
+  &--textarea,
   &--checkbox,
   &--radio {
-    padding: 15px 15px 12px;
+    padding: 12px;
 
     &::placeholder {
       font-size: 16px;
       font-weight: normal;
-      line-height: 1.13;
+      line-height: 18px;
       color: $secondary-text-color;
       text-transform: uppercase;
     }
@@ -16,5 +16,12 @@
 
   &--text {
     margin-left: 10px;
+  }
+
+  &--textarea {
+    height: 150px;
+    width: 100%;
+
+    resize: none;
   }
 }

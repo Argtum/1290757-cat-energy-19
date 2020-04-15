@@ -7,3 +7,53 @@
 .program-type__item:not(:first-child) {
   margin-top: 20px;
 }
+
+.program-type__title {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.program-type__description {
+  margin-top: 35px;
+}
+
+.program-type__link {
+  margin-top: 18px;
+}
+
+@media (min-width: $tablet) {
+  .program-type__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .program-type__title {
+    margin: 0;
+  }
+
+  .program-type__description {
+    margin-top: 25px;
+  }
+
+  .program-type__link {
+    margin-top: 55px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .program-type__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-type__item:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .program-type__description {
+    margin-top: 73px;
+  }
+
+  .program-type__link {
+    margin-top: 30px;
+  }
+}

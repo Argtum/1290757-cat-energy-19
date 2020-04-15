@@ -1,0 +1,42 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--footer {
+    padding: 25px 25px 30px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet) {
+  .logo {
+    &--footer {
+      padding: 0;
+    }
+  }
+
+  .logo__image {
+    &--header {
+      width: 174px;
+      height: 59px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo__image {
+    &--header {
+      width: 203px;
+      height: 60px;
+    }
+  }
+}

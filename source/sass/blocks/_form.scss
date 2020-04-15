@@ -1,9 +1,25 @@
 .form__fieldset {
   border: none;
-  padding: 15px 0;
+  padding: 25px 0 23px;
 
   &--no-title {
     border-bottom: 1px solid #d9d9d9;
+  }
+
+  &--chose-program {
+    padding: 0 0 27px;
+  }
+
+  &--master-data {
+    padding: 28px 0 0;
+  }
+
+  &--comment {
+    padding: 28px 0 0;
+  }
+
+  &--extra {
+    padding: 26px 0 0;
   }
 }
 
@@ -11,25 +27,42 @@
   font-size: 24px;
   font-weight: normal;
   color: $main-text-color;
+  line-height: 24px;
 }
 
 .form__list {
   margin: 0;
   padding-left: 0;
   list-style: none;
+
+  &--master-data {
+    margin-top: 30px;
+  }
+
+  &--comment {
+    margin-top: 32px;
+  }
+
+  &--extra {
+    margin-top: 40px;
+  }
 }
 
 .form__item {
-  margin-top: 14px;
+  margin-top: 10px;
+
+  &--extra {
+    margin-top: 25px;
+  }
 }
 
 .form__description {
-  margin: 23px 0 0;
+  margin: 20px 0 0;
 
   font-family: $secondary-font;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.14;
+  line-height: 16px;
   text-align: center;
   color: $secondary-text-color;
 }
@@ -37,7 +70,19 @@
 .form__label {
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.13;
+  line-height: 18px;
   color: #222222;
   text-transform: uppercase;
+}
+
+.form__field {
+  margin-top: 3px;
+
+  &--radio {
+    margin-top: 18px;
+  }
+}
+
+.form__button-container {
+  margin-top: 40px;
 }

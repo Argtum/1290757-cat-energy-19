@@ -1,3 +1,40 @@
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+}
+
 .page-header__container {
-  border-bottom: 1px solid #d9d9d9;
+  padding: 10px 0 0;
+}
+
+@media (min-width: $tablet) {
+  .page-header__wrapper {
+    padding-bottom: 0;
+  }
+
+  .page-header {
+    margin-top: 24px;
+    display: flex;
+  }
+
+  .page-header__container {
+    padding: 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    margin-top: 54px;
+  }
+
+  .page-header__container {
+    width: 100%;
+  }
 }

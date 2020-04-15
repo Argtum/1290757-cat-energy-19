@@ -1,16 +1,66 @@
 .price {
   background-color: $main-color;
 
-  padding: 60px 43px;
+  height: 289px;
+  padding: 187px 43px 60px;
+
+  position: relative;
 }
 
 .price__text {
   font-family: $secondary-font;
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
 
   margin: 0;
+}
+
+.price__icon {
+  position: absolute;
+  top: 65px;
+  left: calc(50% - 28px);
+}
+
+@media (min-width: $tablet) {
+  .price {
+    height: 200px;
+    padding: 1px 0 0;
+  }
+
+  .price__text {
+    width: 165px;
+    text-align: left;
+
+    margin-left: auto;
+    margin-right: 120px;
+    margin-top: 71px;
+  }
+
+  .price__icon {
+    position: absolute;
+    top: 65px;
+    left: 91px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .price {
+    width: 245px;
+    height: 289px;
+    padding: 40px;
+  }
+
+  .price__text {
+    text-align: center;
+    margin-top: 148px;
+  }
+
+  .price__icon {
+    position: absolute;
+    top: 65px;
+    left: calc(50% - 28px);
+  }
 }

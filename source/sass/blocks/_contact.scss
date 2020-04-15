@@ -1,49 +1,107 @@
 .contact {
   background-color: $secondary-color;
-  padding: 31px 0 0;
 
   &--main {
     background-color: #ffffff;
   }
 }
 
-.contact__title {
-  margin: 0;
+.contact__text-container {
+  display: flex;
+  justify-content: space-between;
 
+  padding: 29px 4px 25px 0;
+}
+
+.contact__title {
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.25;
+  line-height: 20px;
   color: $main-text-color;
   text-transform: uppercase;
+
+  margin: 0;
+  width: 124px;
 }
 
 .contact__address {
   font-family: $secondary-font;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.43;
+  line-height: 20px;
   color: $secondary-text-color;
 
   margin: 0;
+  width: 135px;
 }
 
-.contact__map {
+.contact__map-container {
   position: relative;
 }
 
-.contact__map iframe {
+.contact__map {
   position: relative;
   z-index: 2;
 
   border: none;
 }
 
-.contact__map img {
+.contact__map-image {
   margin: 0;
 
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+@media (min-width: $tablet) {
+  .contact__text-container {
+    padding: 65px 42px 60px 40px;
+  }
+
+  .contact__title {
+    font-size: 20px;
+    line-height: 25px;
+
+    width: 155px;
+  }
+
+  .contact__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    width: 155px;
+    margin-top: -2px;
+  }
+
+  .contact__city {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contact {
+    position: relative;
+  }
+
+  .contact__text-container {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 3;
+
+    width: 570px;
+    height: 200px;
+    padding: 65px 90px 60px 75px;
+
+    background-color: #ffffff;
+  }
+
+  .contact__address {
+    text-align: left;
+  }
 }
 

@@ -1,7 +1,44 @@
+.addition__price {
+  margin-top: 39px;
+}
+
 .addition__title {
   margin: 0;
 
   font-size: 24px;
   font-weight: normal;
   color: $main-text-color;
+}
+
+@media (min-width: $tablet) {
+  .addition__title {
+    font-size: 36px;
+
+    width: 415px;
+    padding: 0 35px;
+    background-color: #ffffff;
+  }
+
+  .addition__product {
+    margin-top: 78px;
+  }
+
+  .addition__price {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .addition__title {
+    padding: 0;
+  }
+
+  .addition__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .addition__price {
+    margin-top: 77px;
+  }
 }
