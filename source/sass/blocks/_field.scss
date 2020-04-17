@@ -1,8 +1,7 @@
 .field {
   &--text,
   &--textarea,
-  &--checkbox,
-  &--radio {
+  &--checkbox {
     padding: 12px;
 
     &::placeholder {
@@ -15,7 +14,8 @@
   }
 
   &--text {
-    margin-left: 10px;
+    padding: 10px 10px 14px 14px;
+    width: 100%;
   }
 
   &--textarea {
@@ -23,5 +23,135 @@
     width: 100%;
 
     resize: none;
+  }
+
+  &--radio {
+    &~.form__label {
+      position: relative;
+      cursor: pointer;
+
+      padding-left: 46px;
+      margin-left: -2px;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: -6px;
+        left: 0;
+
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+
+        border: 1px solid #cdcdcd;
+        border-radius: 50%;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 3px;
+        left: 9px;
+
+        display: none;
+        z-index: 2;
+
+        width: 12px;
+        height: 12px;
+
+        background-color: $main-color;
+        border-radius: 50%;
+      }
+    }
+
+    &:focus,
+    &:hover {
+      &~.form__label {
+        &::before {
+          border: 1px solid #bababa;
+        }
+      }
+    }
+
+    &:active {
+      &~.form__label {
+        opacity: 0.3;
+      }
+    }
+
+    &:checked {
+      &~.form__label {
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &--checkbox {
+    &~.form__label {
+      position: relative;
+      cursor: pointer;
+
+      padding-left: 46px;
+      margin-left: -2px;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        top: -5px;
+        left: 0;
+
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+
+        border: 1px solid #cdcdcd;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 2px;
+        left: 5px;
+
+        display: none;
+        z-index: 2;
+
+        width: 20px;
+        height: 11px;
+
+        border-left: 1px solid $main-color;
+        border-bottom: 1px solid $main-color;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &:focus,
+    &:hover {
+      &~.form__label {
+        &::before {
+          border: 1px solid #bababa;
+        }
+      }
+    }
+
+    &:active {
+      &~.form__label {
+        opacity: 0.3;
+      }
+    }
+
+    &:checked {
+      &~.form__label {
+        &::after {
+          display: block;
+        }
+      }
+    }
   }
 }
