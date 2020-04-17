@@ -94,6 +94,10 @@
     &--catalog {
       padding-top: 0;
     }
+
+    &--program-selection {
+      padding: 55px 0 72px;
+    }
   }
 
   .section__title {
@@ -114,6 +118,11 @@
       font-size: 20px;
       text-align: left;
       color: $main-text-color;
+    }
+
+    &--program-selection {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }

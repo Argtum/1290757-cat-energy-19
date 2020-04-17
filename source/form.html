@@ -62,11 +62,10 @@
         Заполните анкету и мы подберём<br>
         программу питания для вашего кота
       </p>
-    </div>
-    <form class="program-selection__form form" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__fieldset form__fieldset--no-title">
-        <legend class="visually-hidden">Данные кота</legend>
-        <div class="container">
+
+      <form class="program-selection__form form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__fieldset form__fieldset--no-title">
+          <legend class="visually-hidden">Данные кота</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">
@@ -88,10 +87,8 @@
               </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--chose-program form__fieldset--no-title">
-        <div class="container">
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--chose-program form__fieldset--no-title">
           <legend class="visually-hidden">Тип программы</legend>
           <ul class="form__list">
             <li class="form__item form__item--radio">
@@ -110,11 +107,9 @@
               <label class="form__label" for="program-unknown">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--master-data">
-        <div class="container">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--master-data">
+          <legend class="form__legend form__legend--master-data">Контактные данные (владельца кота)</legend>
           <ul class="form__list form__list--master-data">
             <li class="form__item">
               <label class="form__label">
@@ -131,11 +126,9 @@
               </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--comment">
-        <div class="container">
-          <legend class="form__legend">Комментарий</legend>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--comment">
+          <legend class="form__legend form__legend--comment">Комментарий</legend>
           <ul class="form__list form__list--comment">
             <li class="form__item">
               <label class="form__label">
@@ -145,11 +138,9 @@
               </label>
             </li>
           </ul>
-        </div>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--extra">
-        <div class="container">
-          <legend class="form__legend">Дополнительно</legend>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--extra">
+          <legend class="form__legend form__legend--extra">Дополнительно</legend>
           <ul class="form__list form__list--extra">
             <li class="form__item form__item--extra">
               <input id="addition-sweetener" class="visually-hidden field field--checkbox" type="checkbox"
@@ -170,13 +161,13 @@
               <label for="addition-vitamins" class="form__label">Витамины</label>
             </li>
           </ul>
+        </fieldset>
+        <div class="form__button-container">
+          <button class="form__button button button--green button--form" type="submit">Отправить заявку</button>
+          <p class="form__description">* &#8212; Обязательные поля</p>
         </div>
-      </fieldset>
-      <div class="form__button-container container">
-        <button class="form__button button button--green" type="submit">Отправить заявку</button>
-        <p class="form__description">* &#8212; Обязательные поля</p>
-      </div>
-    </form>
+      </form>
+    </div>
   </section>
 
   <section class="contact section section--contact">

@@ -1,3 +1,10 @@
 .program-selection__description {
   margin-top: 37px;
 }
+
+@media (min-width: $tablet) {
+  .program-selection__description {
+    margin-top: 55px;
+    margin-left: 40px;
+  }
+}
