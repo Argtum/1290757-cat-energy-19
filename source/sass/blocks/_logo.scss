@@ -17,6 +17,17 @@
   }
 }
 
+.logo__link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet) {
   .logo {
     &--footer {

@@ -13,11 +13,29 @@
   &--green {
     background-color: $main-color;
     color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--light {
     background-color: $secondary-color;
     color: $secondary-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   &--small-text {

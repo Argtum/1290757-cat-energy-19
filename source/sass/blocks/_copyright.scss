@@ -13,6 +13,25 @@
   color: $secondary-text-color;
 
   display: block;
+
+  &--text {
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__image {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {

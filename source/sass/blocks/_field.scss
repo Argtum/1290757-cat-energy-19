@@ -1,5 +1,7 @@
 .field {
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  position: relative;
 
   &--text,
   &--textarea {
@@ -12,11 +14,28 @@
       color: $secondary-text-color;
       text-transform: uppercase;
     }
+
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(205, 205, 205, 1);
+    }
+
+    &:active {
+      border: 2px solid $secondary-color;
+    }
+
+    /*&:invalid {
+      border: 2px solid #ff8282;
+    }*/
   }
 
   &--text {
     padding: 11px 10px 14px 14px;
     width: 100%;
+
+    &:active {
+      padding: 10px 9px 13px 13px;
+    }
   }
 
   &--textarea {
@@ -24,6 +43,10 @@
     width: 100%;
 
     resize: none;
+
+    &:active {
+      padding: 11px;
+    }
   }
 
   &--radio {
@@ -155,6 +178,24 @@
       }
     }
   }
+
+  &--master-data {
+    padding-right: 40px;
+  }
+}
+
+.field__icon {
+  position: absolute;
+
+  &--mail {
+    right: 15px;
+    top: 16px;
+  }
+
+  &--phone {
+    right: 13px;
+    top: 13px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -210,6 +251,26 @@
     &--textarea {
       height: 177px;
       padding: 12px 16px;
+
+      &:active {
+        padding: 11px 15px;
+      }
+    }
+
+    &--master-data {
+      padding-right: 50px;
+    }
+  }
+
+  .field__icon {
+    &--mail {
+      right: 18px;
+      top: 21px;
+    }
+
+    &--phone {
+      right: 15px;
+      top: 18px;
     }
   }
 }
@@ -218,11 +279,31 @@
   .field {
     &--text {
       padding: 11px 10px 14px 18px;
+
+      &:active {
+        padding: 10px 9px 13px 17px;
+      }
     }
 
     &--textarea {
       padding: 16px 17px;
       margin-left: -3px;
+
+      &:active {
+        padding: 15px 16px;
+      }
+    }
+  }
+
+  .field__icon {
+    &--mail {
+      right: 20px;
+      top: 21px;
+    }
+
+    &--phone {
+      right: 20px;
+      top: 18px;
     }
   }
 }
