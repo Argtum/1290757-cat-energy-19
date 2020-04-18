@@ -8,3 +8,9 @@
     margin-left: 40px;
   }
 }
+
+@media (min-width: $desktop) {
+  .program-selection__description {
+    margin-left: 0;
+  }
+}

@@ -213,3 +213,16 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .field {
+    &--text {
+      padding: 11px 10px 14px 18px;
+    }
+
+    &--textarea {
+      padding: 16px 17px;
+      margin-left: -3px;
+    }
+  }
+}
