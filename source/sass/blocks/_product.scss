@@ -1,5 +1,6 @@
 .product__wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .product__list {
@@ -109,8 +110,7 @@
   .product__link {
     &--image {
       position: absolute;
-      bottom: 350px;
-      left: calc(45% - 45px);
+      bottom: 303px;
       z-index: 3;
     }
 
@@ -145,6 +145,17 @@
 
     &--addition {
       margin-top: 22px;
+    }
+  }
+
+  .product__image {
+    width: 324px;
+    height: 173px;
+
+    &--chicken-1000,
+    &--fish-1000,
+    &--buckwheat-1000 {
+      height: 208px;
     }
   }
 }
@@ -191,7 +202,7 @@
 
   .product__link {
     &--image {
-      left: calc(25% - 10px);
+      left: calc(25% - 63px);
     }
   }
 
@@ -201,5 +212,9 @@
 
   .product__options {
     margin-top: 18px;
+  }
+
+  .product__image {
+    width: 245px;
   }
 }
