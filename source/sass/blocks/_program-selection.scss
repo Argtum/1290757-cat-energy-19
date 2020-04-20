@@ -1,3 +1,16 @@
 .program-selection__description {
-  margin-top: 38px;
+  margin-top: 37px;
+}
+
+@media (min-width: $tablet) {
+  .program-selection__description {
+    margin-top: 55px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .program-selection__description {
+    margin-left: 0;
+  }
 }
