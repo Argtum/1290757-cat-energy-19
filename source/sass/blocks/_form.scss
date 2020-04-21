@@ -113,6 +113,21 @@
   margin-top: 2px;
 }
 
+.form__field-icon {
+  position: absolute;
+  pointer-events: none;
+
+  &--mail {
+    right: 15px;
+    top: 16px;
+  }
+
+  &--phone {
+    right: 13px;
+    top: 13px;
+  }
+}
+
 .form__button-container {
   margin-top: 40px;
 }
@@ -228,6 +243,18 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  .form__field-icon {
+    &--mail {
+      right: 18px;
+      top: 21px;
+    }
+
+    &--phone {
+      right: 15px;
+      top: 18px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -307,5 +334,17 @@
 
   .form__description {
     margin: 17px 0 0 82px;
+  }
+
+  .form__field-icon {
+    &--mail {
+      right: 20px;
+      top: 21px;
+    }
+
+    &--phone {
+      right: 20px;
+      top: 18px;
+    }
   }
 }
