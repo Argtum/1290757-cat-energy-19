@@ -15,6 +15,7 @@ var include = require("posthtml-include");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var del = require("del");
+var uglify = require('gulp-uglify');
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -75,10 +76,14 @@ gulp.task("html", function () {
     ]))
     .pipe(gulp.dest("build"));
 });
+gulp.task("js", function () {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
+});
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -106,5 +111,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("images", "webp", "sprite", "copy", "css"), "html"));
+gulp.task("build", gulp.series("clean", gulp.parallel("images", "webp", "sprite", "copy", "js", "css"), "html"));
 gulp.task("start", gulp.series("build", "server"));
