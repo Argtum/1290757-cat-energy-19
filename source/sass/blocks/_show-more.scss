@@ -31,6 +31,12 @@
   position: absolute;
   top: 26px;
   left: calc(50% - 15px);
+
+  fill: #ededed;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -67,6 +73,14 @@
     position: absolute;
     top: 55px;
     left: calc(50% - 30px);
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 }
 
