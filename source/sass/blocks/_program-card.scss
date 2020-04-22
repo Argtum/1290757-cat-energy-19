@@ -2,6 +2,8 @@
   width: 100%;
   background-color: $secondary-color;
   padding: 22px 20px 21px;
+
+  position: relative;
 }
 
 .program-card__title {
@@ -73,6 +75,32 @@
   }
 }
 
+.program-card__image-container {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 23px;
+  left: 23px;
+
+  border-radius: 50%;
+  background-color: $main-color;
+}
+
+.program-card__image {
+  position: absolute;
+
+  &--slim {
+    top: -2px;
+    left: 8px;
+  }
+
+  &--pro {
+    top: 11px;
+    left: -9px;
+  }
+}
+
 @media (min-width: $tablet) {
   .program-card {
     padding: 72px 53px 60px;
@@ -122,6 +150,33 @@
       }
     }
   }
+
+  .program-card__image-container {
+    width: 200px;
+    height: 200px;
+
+    top: 90px;
+    left: unset;
+    right: 60px;
+  }
+
+  .program-card__image {
+    &--slim {
+      width: 141px;
+      height: 194px;
+
+      top: -11px;
+      left: 28px;
+    }
+
+    &--pro {
+      width: 268px;
+      height: 113px;
+
+      top: 43px;
+      left: -35px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -142,6 +197,33 @@
 
   .program-card__description {
     padding-right: 0;
+  }
+
+  .program-card__image-container {
+    width: 100px;
+    height: 100px;
+
+    top: 49px;
+    left: 52px;
+    right: unset;
+  }
+
+  .program-card__image {
+    &--slim {
+      width: 71px;
+      height: 97px;
+
+      top: -7px;
+      left: 14px;
+    }
+
+    &--pro {
+      width: 134px;
+      height: 57px;
+
+      top: 21px;
+      left: -18px;
+    }
   }
 }
 
