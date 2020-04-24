@@ -63,7 +63,43 @@
     display: flex;
   }
 
+  .achievement__item {
+    width: 162px;
+    padding: 17px 17px 19px;
+  }
+
   .achievement__list {
     width: 366px;
+    margin-top: 53px;
+  }
+
+  .achievement__value {
+    font-size: 30px;
+  }
+
+  .achievement__name {
+    font-size: 14px;
+
+    padding: 0 8px;
+    width: unset;
+
+    top: 61px;
+
+    &--weight {
+      left: 23px;
+    }
+
+    &--day {
+      left: 9px;
+    }
+  }
+
+  .achievement__cost {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+
+    width: 174px;
+    margin-top: 59px;
   }
 }

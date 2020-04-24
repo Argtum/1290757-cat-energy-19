@@ -3,11 +3,6 @@
 }
 
 .living-example__description {
-  font-family: $secondary-font;
-  font-size: 14px;
-  color: $secondary-text-color;
-  font-weight: normal;
-
   margin-top: 35px;
 }
 
@@ -19,5 +14,13 @@
   .living-example__achievement {
     display: flex;
     justify-content: space-between;
+  }
+
+  .living-example__description {
+    margin-top: 64px;
+  }
+
+  .living-example__slider {
+    margin-top: 87px;
   }
 }

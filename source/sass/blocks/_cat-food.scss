@@ -3,13 +3,17 @@
 }
 
 .cat-food__background {
-  background-color: $main-color;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(90deg, #65a93c, #63a73a);
 
   height: calc(100% - 200px);
   width: 100%;
 
   position: absolute;
   z-index: -1;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(90deg, #65a93c, #63a73a);
+  }
 }
 
 .cat-food__container {
@@ -67,9 +71,7 @@
 
 @media (min-width: $desktop) {
   .cat-food__background {
-    background-color: $main-color;
-    position: absolute;
-    z-index: -1;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat top center;
 
     display: block;
     height: 696px;
@@ -77,6 +79,10 @@
 
     top: -117px;
     right: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/index-background-desktop@2x.jpg") no-repeat top center;
+    }
   }
 
   .cat-food__container {

@@ -19,8 +19,26 @@
 }
 
 @media (min-width: $tablet) {
+  .slider__list {
+    width: 676px;
+    height: 516px;
+
+    position: relative;
+  }
+
+  .slider__image {
+    width: 676px;
+    height: 516px;
+    margin-left: 5px;
+
+    position: absolute;
+  }
+
   .slider__item {
-    display: flex;
-    justify-content: center;
+    display: block;
+  }
+
+  .slider__toggle {
+    margin-top: 18px;
   }
 }

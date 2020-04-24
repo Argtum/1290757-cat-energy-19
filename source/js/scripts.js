@@ -41,8 +41,6 @@ if (buttonBefore) {
     sliderBefore.classList.add(activeSliderClass);
 
     if (slidersMarker.classList.contains(toggleSliderClass)) {
-      console.log("after");
-
       slidersMarker.classList.remove(toggleSliderClass);
     }
   });
@@ -57,8 +55,6 @@ if (buttonAfter) {
     sliderAfter.classList.add(activeSliderClass);
 
     if (!slidersMarker.classList.contains(toggleSliderClass)) {
-      console.log("before");
-
       slidersMarker.classList.add(toggleSliderClass);
     }
   });

@@ -70,6 +70,13 @@
     text-align: center;
     font-weight: normal;
   }
+
+  &--living-example {
+    font-family: $secondary-font;
+    font-size: 14px;
+    color: $secondary-text-color;
+    font-weight: normal;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -98,6 +105,11 @@
     &--program-selection {
       padding: 55px 0 72px;
     }
+
+    &--living-example {
+      padding-top: 44px;
+      padding-bottom: 67px;
+    }
   }
 
   .section__title {
@@ -123,6 +135,14 @@
     &--program-selection {
       font-size: 20px;
       line-height: 30px;
+    }
+
+    &--living-example {
+      font-family: $secondary-font;
+      font-size: 16px;
+      line-height: 24px;
+      color: $secondary-text-color;
+      font-weight: normal;
     }
   }
 }
