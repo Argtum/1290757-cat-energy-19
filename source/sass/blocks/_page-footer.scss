@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $secondary-color;
+  margin-top: -2px;
 }
 
 .page-footer__logo,
@@ -13,7 +14,7 @@
       display: flex;
       justify-content: space-between;
 
-      padding-top: 56px;
+      padding-top: 53px;
       padding-bottom: 56px;
     }
   }
