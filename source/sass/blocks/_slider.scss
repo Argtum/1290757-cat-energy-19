@@ -14,9 +14,13 @@
   }
 }
 
+.slider__image {
+  margin-left: -20px;
+}
+
 .slider__toggle {
   margin-top: 31px;
-  margin-left: 24px;
+  margin-left: 5px;
 }
 
 @media (min-width: $tablet) {
