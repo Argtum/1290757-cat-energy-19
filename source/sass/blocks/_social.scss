@@ -13,6 +13,7 @@
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social__item {
@@ -20,6 +21,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:nth-child(n + 5) {
+    margin-top: 15px;
   }
 }
 
@@ -59,6 +64,10 @@
 
   .social__item {
     margin-right: 28px;
+
+    &:nth-child(n + 5) {
+      margin-top: 0;
+    }
   }
 
   .social__icon {
