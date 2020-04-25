@@ -82,6 +82,7 @@
 
     padding: 0 8px;
     width: unset;
+    background-color: #ffffff;
 
     top: 61px;
 
@@ -101,5 +102,26 @@
 
     width: 174px;
     margin-top: 59px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .achievement {
+    flex-direction: column;
+  }
+
+  .achievement__list {
+    margin-top: 69px;
+  }
+
+  .achievement__cost {
+    width: 100%;
+    margin-top: 56px;
+
+    text-align: left;
+  }
+
+  .achievement__cost-value {
+    margin-left: 60px;
   }
 }

@@ -76,6 +76,8 @@
     font-size: 14px;
     color: $secondary-text-color;
     font-weight: normal;
+
+    padding-right: 1px;
   }
 }
 
@@ -108,7 +110,7 @@
 
     &--living-example {
       padding-top: 44px;
-      padding-bottom: 67px;
+      padding-bottom: 0;
     }
   }
 
@@ -143,6 +145,8 @@
       line-height: 24px;
       color: $secondary-text-color;
       font-weight: normal;
+
+      padding-right: 6px;
     }
   }
 }
@@ -168,6 +172,15 @@
 
     &--program-selection {
       padding: 71px 0 82px;
+    }
+
+    &--living-example {
+      padding-top: 27px;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }

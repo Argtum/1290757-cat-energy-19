@@ -8,9 +8,14 @@
 
 .living-example__slider {
   margin-top: 35px;
+  margin-left: -20px;
 }
 
 @media (min-width: $tablet) {
+  .living-example {
+    background-color: #ffffff;
+  }
+
   .living-example__achievement {
     display: flex;
     justify-content: space-between;
@@ -22,5 +27,21 @@
 
   .living-example__slider {
     margin-top: 87px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .living-example__content {
+    max-width: 445px;
+    width: 100%;
+  }
+
+  .living-example__description {
+    margin-top: 145px;
+  }
+
+  .living-example__slider {
+    margin-top: -54px;
+    margin-right: -28px;
   }
 }
