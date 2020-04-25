@@ -37,6 +37,10 @@
 @media (min-width: $tablet) {
   .menu-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    width: calc(100vw - (768px - 500px));
   }
 
   .menu-list__item {
@@ -62,6 +66,10 @@
 }
 
 @media (min-width: $desktop) {
+  .menu-list {
+    width: 600px;
+  }
+
   .menu-list__link {
     font-size: 20px;
     padding: 20px 20px 20px 14px;

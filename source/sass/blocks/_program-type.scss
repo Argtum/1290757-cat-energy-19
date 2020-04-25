@@ -43,10 +43,17 @@
   .program-type__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .program-type__item:not(:first-child) {
-    margin-top: 0;
+  .program-type__item {
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
   }
 
   .program-type__description {
