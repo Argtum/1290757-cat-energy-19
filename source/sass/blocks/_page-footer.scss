@@ -25,3 +25,11 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .page-footer {
+    .container {
+      padding-top: 60px;
+    }
+  }
+}
+
