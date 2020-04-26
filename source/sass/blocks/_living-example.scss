@@ -3,21 +3,46 @@
 }
 
 .living-example__description {
-  font-family: $secondary-font;
-  font-size: 14px;
-  color: $secondary-text-color;
-  font-weight: normal;
-
   margin-top: 35px;
 }
 
 .living-example__slider {
-  margin-top: 35px;
+  margin-top: 36px;
 }
 
 @media (min-width: $tablet) {
+  .living-example {
+    background-color: #ffffff;
+  }
+
   .living-example__achievement {
     display: flex;
     justify-content: space-between;
+  }
+
+  .living-example__description {
+    margin-top: 64px;
+  }
+
+  .living-example__slider {
+    margin-top: 87px;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .living-example__content {
+    max-width: 445px;
+    width: 100%;
+  }
+
+  .living-example__description {
+    margin-top: 146px;
+  }
+
+  .living-example__slider {
+    margin-top: -54px;
+    margin-right: -28px;
   }
 }

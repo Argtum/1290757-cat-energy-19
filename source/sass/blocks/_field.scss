@@ -184,20 +184,6 @@
   }
 }
 
-.field__icon {
-  position: absolute;
-
-  &--mail {
-    right: 15px;
-    top: 16px;
-  }
-
-  &--phone {
-    right: 13px;
-    top: 13px;
-  }
-}
-
 @media (min-width: $tablet) {
   .field {
     &--text,
@@ -261,18 +247,6 @@
       padding-right: 50px;
     }
   }
-
-  .field__icon {
-    &--mail {
-      right: 18px;
-      top: 21px;
-    }
-
-    &--phone {
-      right: 15px;
-      top: 18px;
-    }
-  }
 }
 
 @media (min-width: $desktop) {
@@ -292,18 +266,6 @@
       &:active {
         padding: 15px 16px;
       }
-    }
-  }
-
-  .field__icon {
-    &--mail {
-      right: 20px;
-      top: 21px;
-    }
-
-    &--phone {
-      right: 20px;
-      top: 18px;
     }
   }
 }

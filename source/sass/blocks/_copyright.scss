@@ -1,5 +1,5 @@
 .copyright {
-  padding: 20px 0 20px;
+  padding: 19px 0;
 
   display: flex;
   justify-content: space-between;
@@ -38,5 +38,6 @@
   .copyright {
     padding: 0;
     width: 163px;
+    margin-top: -3px;
   }
 }

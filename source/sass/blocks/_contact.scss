@@ -4,13 +4,20 @@
   &--main {
     background-color: #ffffff;
   }
+
+  .container {
+    background-color: white;
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .contact__text-container {
   display: flex;
   justify-content: space-between;
 
-  padding: 29px 4px 25px 0;
+  padding: 28px 4px 26px 0;
+  margin-left: -1px;
 }
 
 .contact__title {
@@ -37,6 +44,7 @@
 
 .contact__map-container {
   position: relative;
+  margin-top: -35px;
 }
 
 .contact__map {
@@ -58,6 +66,7 @@
 @media (min-width: $tablet) {
   .contact__text-container {
     padding: 65px 42px 60px 40px;
+    margin-left: 1px;
   }
 
   .contact__title {
@@ -79,6 +88,10 @@
   .contact__city {
     display: block;
     margin-top: 20px;
+  }
+
+  .contact__map-container {
+    margin-top: 0;
   }
 }
 

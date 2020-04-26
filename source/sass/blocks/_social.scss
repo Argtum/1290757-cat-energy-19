@@ -1,5 +1,5 @@
 .social {
-  padding: 20px;
+  padding: 21px 20px 19px;
 
   display: flex;
   justify-content: center;
@@ -13,13 +13,18 @@
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social__item {
-  margin-right: 40px;
+  margin-right: 39.5px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:nth-child(n + 5) {
+    margin-top: 15px;
   }
 }
 
@@ -59,6 +64,10 @@
 
   .social__item {
     margin-right: 28px;
+
+    &:nth-child(n + 5) {
+      margin-top: 0;
+    }
   }
 
   .social__icon {

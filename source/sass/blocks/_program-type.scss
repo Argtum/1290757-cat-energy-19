@@ -31,7 +31,7 @@
   }
 
   .program-type__description {
-    margin-top: 25px;
+    margin-top: 24px;
   }
 
   .program-type__link {
@@ -43,17 +43,24 @@
   .program-type__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .program-type__item:not(:first-child) {
-    margin-top: 0;
+  .program-type__item {
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 20px;
+    }
   }
 
   .program-type__description {
-    margin-top: 73px;
+    margin-top: 72px;
   }
 
   .program-type__link {
-    margin-top: 30px;
+    margin-top: 31px;
   }
 }
