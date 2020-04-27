@@ -28,11 +28,6 @@
       &:active {
         border: 2px solid $secondary-color;
       }
-
-      &:hover:invalid,
-      &:focus:invalid {
-        border: 2px solid #ff8282;
-      }
     }
   }
 
@@ -40,6 +35,11 @@
     input {
       padding: 12px 10px 13px 15px;
       width: 100%;
+
+      &:hover:invalid,
+      &:focus:invalid {
+        border: 2px solid #ff8282;
+      }
 
       &:active,
       &:focus:invalid,
