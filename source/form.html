@@ -74,22 +74,21 @@
                 <legend class="visually-hidden">Данные кота</legend>
                 <ul class="form__list">
                   <li class="form__item">
-                    <label class="form__label">
-                      <span class="form__label-text">Имя:*</span>
-                      <input class="form__field field field--text" type="text" name="cat-name"
-                             placeholder="Барсик" required>
+                    <label class="form__label field field--text">
+                      <span class="field__text">Имя:*</span>
+                      <input type="text" name="cat-name" placeholder="Барсик" required>
                     </label>
                   </li>
                   <li class="form__item">
-                    <label class="form__label">
-                      <span class="form__label-text">Вес (кг):*</span>
-                      <input class="form__field field field--text" type="text" name="cat-weight" placeholder="7" required>
+                    <label class="form__label field field--text">
+                      <span class="field__text">Вес (кг):*</span>
+                      <input type="text" name="cat-weight" placeholder="7" required>
                     </label>
                   </li>
                   <li class="form__item">
-                    <label class="form__label">
-                      <span class="form__label-text">Возраст (лет):</span>
-                      <input class="form__field field field--text" type="text" name="cat-age" placeholder="7">
+                    <label class="form__label field field--text">
+                      <span class="field__text">Возраст (лет):</span>
+                      <input type="text" name="cat-age" placeholder="7">
                     </label>
                   </li>
                 </ul>
@@ -97,20 +96,19 @@
               <fieldset class="form__fieldset form__fieldset--chose-program form__fieldset--no-title">
                 <legend class="visually-hidden">Тип программы</legend>
                 <ul class="form__list">
-                  <li class="form__item form__item--radio">
-                    <input class="visually-hidden field field--radio" type="radio" name="program"
-                           id="program-lost-weight" value="losing-weight" checked>
-                    <label class="form__label" for="program-lost-weight">Похудение</label>
+                  <li class="form__item form__item--radio field field--radio">
+                    <input class="visually-hidden" type="radio" name="program" id="program-lost-weight"
+                           value="losing-weight" checked>
+                    <label class="field__text" for="program-lost-weight">Похудение</label>
                   </li>
-                  <li class="form__item form__item--radio">
-                    <input class="visually-hidden field field--radio" type="radio" name="program"
-                           id="program-gain-weight" value="gain-weight">
-                    <label class="form__label" for="program-gain-weight">Набор массы</label>
+                  <li class="form__item form__item--radio field field--radio">
+                    <input class="visually-hidden" type="radio" name="program" id="program-gain-weight"
+                           value="gain-weight">
+                    <label class="field__text" for="program-gain-weight">Набор массы</label>
                   </li>
-                  <li class="form__item form__item--radio">
-                    <input class="visually-hidden field field--radio" type="radio" name="program"
-                           id="program-unknown" value="unknown">
-                    <label class="form__label" for="program-unknown">Не знаю (нужен ваш совет)</label>
+                  <li class="form__item form__item--radio field field--radio">
+                    <input class="visually-hidden" type="radio" name="program" id="program-unknown" value="unknown">
+                    <label class="field__text" for="program-unknown">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
               </fieldset>
@@ -119,20 +117,18 @@
               <legend class="form__legend form__legend--master-data">Контактные данные (владельца кота)</legend>
               <ul class="form__list form__list--master-data">
                 <li class="form__item form__item--master-data">
-                  <label class="form__label">
-                    <span class="form__label-text form__label-text--master-data">E-mail:*</span>
-                    <input class="form__field field field--text field--master-data" type="email" name="email"
-                           placeholder="kuklachev@gmail.com" required>
+                  <label class="form__label field field--text field--master-data">
+                    <span class="field__text field__text--master-data">E-mail:*</span>
+                    <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
                     <svg class="form__field-icon form__field-icon--mail" width="18" height="14">
                       <use xlink:href="#icon-mail"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="form__item form__item--master-data">
-                  <label class="form__label">
-                    <span class="form__label-text form__label-text--master-data">Телефон:*</span>
-                    <input class="form__field field field--text field--master-data" type="tel" name="phone"
-                           placeholder="8 (960) 900-60-90" required>
+                  <label class="form__label field field--text">
+                    <span class="field__text field__text--master-data">Телефон:*</span>
+                    <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                     <svg class="form__field-icon form__field-icon--phone" width="21" height="21">
                       <use xlink:href="#icon-phone"></use>
                     </svg>
@@ -144,10 +140,9 @@
               <legend class="form__legend form__legend--comment">Комментарий</legend>
               <ul class="form__list form__list--comment">
                 <li class="form__item">
-                  <label class="form__label">
+                  <label class="form__label field field--textarea">
                     <span class="visually-hidden">Комментарий:</span>
-                    <textarea class="form__field field field--textarea" name="comment" rows="5"
-                              placeholder="Расскажите обо всех повадках кота"></textarea>
+                    <textarea name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
                   </label>
                 </li>
               </ul>
@@ -155,23 +150,21 @@
             <fieldset class="form__fieldset form__fieldset--extra">
               <legend class="form__legend form__legend--extra">Дополнительно</legend>
               <ul class="form__list form__list--extra">
-                <li class="form__item form__item--extra">
-                  <input id="addition-sweetener" class="visually-hidden field field--checkbox" type="checkbox"
-                         name="sweetener" checked>
-                  <label for="addition-sweetener" class="form__label">Сахарозаменитель</label>
+                <li class="form__item form__item--extra field field--checkbox">
+                  <input id="addition-sweetener" class="visually-hidden" type="checkbox" name="sweetener" checked>
+                  <label for="addition-sweetener" class="field__text">Сахарозаменитель</label>
                 </li>
-                <li class="form__item form__item--extra">
-                  <input id="addition-water" class="visually-hidden field field--checkbox" type="checkbox" name="water">
-                  <label for="addition-water" class="form__label">Питьевая вода</label>
+                <li class="form__item form__item--extra field field--checkbox">
+                  <input id="addition-water" class="visually-hidden" type="checkbox" name="water">
+                  <label for="addition-water" class="field__text">Питьевая вода</label>
                 </li>
-                <li class="form__item form__item--extra">
-                  <input id="addition-milk" class="visually-hidden field field--checkbox" type="checkbox" name="milk">
-                  <label for="addition-milk" class="form__label">Молоко</label>
+                <li class="form__item form__item--extra field field--checkbox">
+                  <input id="addition-milk" class="visually-hidden" type="checkbox" name="milk">
+                  <label for="addition-milk" class="field__text">Молоко</label>
                 </li>
-                <li class="form__item form__item--extra">
-                  <input id="addition-vitamins" class="visually-hidden field field--checkbox" type="checkbox"
-                         name="vitamins">
-                  <label for="addition-vitamins" class="form__label">Витамины</label>
+                <li class="form__item form__item--extra field field--checkbox">
+                  <input id="addition-vitamins" class="visually-hidden" type="checkbox" name="vitamins">
+                  <label for="addition-vitamins" class="field__text">Витамины</label>
                 </li>
               </ul>
             </fieldset>
@@ -194,7 +187,7 @@
         </div>
         <div class="contact__map-container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.218587316195!2d30.312790631577727!3d59.93862511774334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1580335393804!5m2!1sru!2sru"
-                  class="contact__map" width="100%" height="375" style="border:0;" allowfullscreen=""></iframe>
+                  class="contact__map" width="100%" height="365" style="border:0;" allowfullscreen=""></iframe>
         </div>
       </section>
     </main>

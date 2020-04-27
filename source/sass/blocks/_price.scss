@@ -1,7 +1,7 @@
 .price {
   background-color: $main-color;
 
-  height: 289px;
+  min-height: 289px;
   padding: 187px 43px 60px;
 
   position: relative;
@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet) {
   .price {
-    height: 200px;
+    min-height: 200px;
     padding: 1px 0 0;
   }
 
@@ -51,7 +51,7 @@
 @media (min-width: $desktop) {
   .price {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     padding: 40px;
   }
 
