@@ -1,6 +1,6 @@
 .form__fieldset {
   border: none;
-  padding: 26px 20px 22px 22px;
+  padding: 25px 20px 23px 22px;
   margin: 0 -20px;
 
   position: relative;
@@ -23,7 +23,7 @@
   &--comment {
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 21px;
+    padding-left: 20px;
   }
 
   &--extra {
@@ -49,7 +49,7 @@
 
     width: 100vw;
     height: 3px;
-    margin-top: 13px;
+    margin-top: 14px;
     background: $main-color;
     z-index: -1;
   }
@@ -59,6 +59,20 @@
   &--extra {
     padding-top: 28px;
   }
+
+  &--comment {
+    padding-left: 25px;
+    padding-right: 22px;
+  }
+
+  &--extra {
+    padding-right: 24px
+  }
+
+  &--master-data {
+    width: 225px;
+    padding-right: 19px;
+  }
 }
 
 .form__list {
@@ -67,27 +81,40 @@
   list-style: none;
 
   &--master-data {
-    margin-top: 33px;
+    margin-top: 34px;
   }
 
   &--comment {
-    margin-top: 32px;
+    margin-top: 35px;
   }
 
   &--extra {
-    margin-top: 39px;
+    margin-top: 40px;
   }
 }
 
 .form__item {
-  margin-top: 12px;
+  margin-top: 14px;
 
   &--extra {
-    margin-top: 25px;
+    margin-top: 12px;
+    height: 30px;
+
+    &:nth-child(2) {
+      margin-top: 13px;
+    }
   }
 
   &--radio {
     margin-top: 25px;
+
+    &:first-child {
+      margin-top: 26px;
+    }
+
+    &:last-child {
+      margin-top: 24px;
+    }
   }
 }
 
@@ -107,7 +134,7 @@
   pointer-events: none;
 
   &--mail {
-    right: 15px;
+    right: 16px;
     top: 16px;
   }
 
@@ -118,7 +145,7 @@
 }
 
 .form__button-container {
-  margin-top: 40px;
+  margin-top: 29px;
 }
 
 @media (min-width: $tablet) {

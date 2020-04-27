@@ -1,5 +1,5 @@
 .social {
-  padding: 21px 20px 19px;
+  padding: 22px 20px 19px;
 
   display: flex;
   justify-content: center;
@@ -7,20 +7,20 @@
 }
 
 .social__list {
-  margin: 1px 0 0 -7px;
-  padding-left: 0;
   list-style: none;
 
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  margin-left: -11px;
 }
 
 .social__item {
-  margin-right: 39.5px;
+  padding: 0 19px;
 
-  &:last-child {
-    margin-right: 0;
+  &--vk {
+    margin-top: -3px;
   }
 
   &:nth-child(n + 5) {
@@ -30,16 +30,6 @@
 
 .social__icon {
   fill: #666666;
-
-  &--vk {
-    margin-left: -2px;
-    margin-right: 2px;
-  }
-
-  &--instagram {
-    margin-top: 2px;
-    margin-left: -4px;
-  }
 
   &:hover,
   &:focus {
