@@ -76,19 +76,19 @@
                   <li class="form__item">
                     <label class="form__label field field--text">
                       <span class="field__text field__text--cat-name">Имя:*</span>
-                      <input type="text" name="cat-name" placeholder="Барсик" required>
+                      <input class="field__input" type="text" name="cat-name" placeholder="Барсик" required>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__label field field--text">
                       <span class="field__text field__text--weight">Вес (кг):*</span>
-                      <input type="text" name="cat-weight" placeholder="7" required>
+                      <input class="field__input" type="text" name="cat-weight" placeholder="7" required>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__label field field--text">
                       <span class="field__text field__text--age">Возраст (лет):</span>
-                      <input type="text" name="cat-age" placeholder="7">
+                      <input class="field__input" type="text" name="cat-age" placeholder="7">
                     </label>
                   </li>
                 </ul>
@@ -97,17 +97,17 @@
                 <legend class="visually-hidden">Тип программы</legend>
                 <ul class="form__list">
                   <li class="form__item form__item--radio field field--radio">
-                    <input class="visually-hidden" type="radio" name="program" id="program-lost-weight"
+                    <input class="visually-hidden field__input field__input--radio" type="radio" name="program" id="program-lost-weight"
                            value="losing-weight" checked>
                     <label class="field__text" for="program-lost-weight">Похудение</label>
                   </li>
                   <li class="form__item form__item--radio field field--radio">
-                    <input class="visually-hidden" type="radio" name="program" id="program-gain-weight"
+                    <input class="visually-hidden field__input field__input--radio" type="radio" name="program" id="program-gain-weight"
                            value="gain-weight">
                     <label class="field__text" for="program-gain-weight">Набор массы</label>
                   </li>
                   <li class="form__item form__item--radio field field--radio">
-                    <input class="visually-hidden" type="radio" name="program" id="program-unknown" value="unknown">
+                    <input class="visually-hidden field__input field__input--radio" type="radio" name="program" id="program-unknown" value="unknown">
                     <label class="field__text" for="program-unknown">Не знаю (нужен ваш совет)</label>
                   </li>
                 </ul>
@@ -119,7 +119,8 @@
                 <li class="form__item form__item--master-data">
                   <label class="form__label field field--text field--master-data">
                     <span class="field__text field__text--email">E-mail:*</span>
-                    <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    <input class="field__input field__input--master-data" type="email" name="email"
+                           placeholder="kuklachev@gmail.com" required>
                     <svg class="form__field-icon form__field-icon--mail" width="17" height="13">
                       <use xlink:href="#icon-mail"></use>
                     </svg>
@@ -128,7 +129,8 @@
                 <li class="form__item form__item--master-data">
                   <label class="form__label field field--text">
                     <span class="field__text field__text--phone">Телефон:*</span>
-                    <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                    <input class="field__input field__input--master-data" type="tel" name="phone"
+                           placeholder="8 (960) 900-60-90" required>
                     <svg class="form__field-icon form__field-icon--phone" width="20" height="20">
                       <use xlink:href="#icon-phone"></use>
                     </svg>
@@ -142,7 +144,7 @@
                 <li class="form__item">
                   <label class="form__label field field--textarea">
                     <span class="visually-hidden">Комментарий:</span>
-                    <textarea name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+                    <textarea class="field__textarea" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
                   </label>
                 </li>
               </ul>
@@ -151,19 +153,23 @@
               <legend class="form__legend form__legend--extra">Дополнительно</legend>
               <ul class="form__list form__list--extra">
                 <li class="form__item form__item--extra field field--checkbox">
-                  <input id="addition-sweetener" class="visually-hidden" type="checkbox" name="sweetener" checked>
+                  <input id="addition-sweetener" class="visually-hidden field__input field__input--checkbox"
+                         type="checkbox" name="sweetener" checked>
                   <label for="addition-sweetener" class="field__text">Сахарозаменитель</label>
                 </li>
                 <li class="form__item form__item--extra field field--checkbox">
-                  <input id="addition-water" class="visually-hidden" type="checkbox" name="water">
+                  <input id="addition-water" class="visually-hidden field__input field__input--checkbox"
+                         type="checkbox" name="water">
                   <label for="addition-water" class="field__text">Питьевая вода</label>
                 </li>
                 <li class="form__item form__item--extra field field--checkbox">
-                  <input id="addition-milk" class="visually-hidden" type="checkbox" name="milk">
+                  <input id="addition-milk" class="visually-hidden field__input field__input--checkbox"
+                         type="checkbox" name="milk">
                   <label for="addition-milk" class="field__text">Молоко</label>
                 </li>
                 <li class="form__item form__item--extra field field--checkbox">
-                  <input id="addition-vitamins" class="visually-hidden" type="checkbox" name="vitamins">
+                  <input id="addition-vitamins" class="visually-hidden field__input field__input--checkbox"
+                         type="checkbox" name="vitamins">
                   <label for="addition-vitamins" class="field__text">Витамины</label>
                 </li>
               </ul>
