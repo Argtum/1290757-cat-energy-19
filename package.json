@@ -14,7 +14,6 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
@@ -22,10 +21,8 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "posthtml-include": "^1.4.3",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "svgxuse": "^1.2.6",
     "webp-in-css": "^0.3.0"
   },
   "scripts": {
