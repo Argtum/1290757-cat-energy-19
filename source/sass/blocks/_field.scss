@@ -249,20 +249,20 @@
 
     &--radio {
       &~.field__text {
-        padding-left: 60px;
+        padding-left: 59px;
 
         &::before {
           width: 40px;
           height: 40px;
 
-          top: -8px;
+          top: -10px;
         }
 
         &::after {
           width: 18px;
           height: 18px;
 
-          top: 3px;
+          top: 1px;
           left: 11px;
         }
       }
@@ -276,7 +276,7 @@
           width: 40px;
           height: 40px;
 
-          top: -8px;
+          top: -10px;
         }
 
         &::after {
@@ -287,13 +287,17 @@
     }
 
     &--master-data {
-      padding-right: 50px;
+      padding: 13px 50px 14px 19px;
+    }
+
+    &--mail {
+      padding: 14px 50px 13px 20px;
     }
   }
 
   .field__textarea {
-    height: 177px;
-    padding: 12px 16px;
+    height: 174px;
+    padding: 15px 18px;
 
     &:active {
       padding: 11px 15px;
@@ -314,6 +318,10 @@
 
     &--cat-name {
       margin-right: 15px;
+    }
+
+    &--phone {
+      margin-right: 16px;
     }
   }
 }

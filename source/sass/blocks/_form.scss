@@ -42,7 +42,7 @@
   padding-left: 23px;
   margin-left: -26px;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
 
@@ -71,6 +71,10 @@
   &--master-data {
     width: 225px;
     padding-right: 19px;
+
+    &::after {
+      margin-top: -10px;
+    }
   }
 }
 
@@ -163,7 +167,7 @@
 
     &--chose-program {
       border: 1px solid #d9d9d9;
-      padding: 32px 28px 36px;
+      padding: 34px 29px 36px;
       margin-left: -4px;
       margin-top: 50px;
     }
@@ -185,19 +189,36 @@
     margin-top: 20px;
 
     &--radio {
-      margin-top: 33px;
+      margin-top: 35px;
 
       &:first-child {
         margin-top: 0;
       }
+
+      &:last-child {
+        margin-top: 35px;
+      }
     }
 
     &--extra {
-      width: 45.4%;
+      width: 45.3%;
+      margin-top: 21px;
+
+      &:nth-child(2) {
+        margin-top: 21px;
+      }
 
       &:nth-child(n+3) {
-        margin-top: 52px;
+        margin-top: 42px;
       }
+    }
+
+    &--master-data {
+      margin-right: -2px;
+    }
+
+    &--phone {
+      margin-left: -4px;
     }
   }
 
@@ -205,28 +226,49 @@
     font-size: 36px;
     line-height: 36px;
 
-    margin-left: -6px;
+    padding-right: 42px;
+    padding-left: 39px;
+    margin-left: -45px;
+
+    &::after {
+      margin-top: 21px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -75px;
+
+      width: 100vw;
+      height: 3px;
+      margin-top: 21px;
+      background: $main-color;
+      z-index: -1;
+    }
 
     &--master-data {
-      padding-top: 77px;
+      padding-top: 75px;
+      width: unset;
     }
 
     &--comment {
-      padding-top: 44px;
+      padding-top: 43px;
+      padding-right: 39px;
     }
 
     &--extra {
-      padding-top: 40px;
+      padding-top: 43px;
     }
   }
 
   .form__list {
     &--master-data {
-      margin-top: 24px;
+      margin-top: 26px;
     }
 
     &--comment {
-      margin-top: 30px;
+      margin-top: 33px;
+      margin-left: -5px;
     }
 
     &--extra {
@@ -241,7 +283,7 @@
 
   .form__button-container {
     display: flex;
-    margin-top: 42px;
+    margin-top: 31px;
     margin-left: -5px;
   }
 
@@ -252,13 +294,13 @@
 
   .form__field-icon {
     &--mail {
-      right: 18px;
-      top: 21px;
+      right: 21px;
+      top: 20px;
     }
 
     &--phone {
-      right: 15px;
-      top: 18px;
+      right: 18px;
+      top: 17px;
     }
   }
 }

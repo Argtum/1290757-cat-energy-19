@@ -9,14 +9,12 @@
 }
 
 @media (min-width: $tablet) {
-  .page-footer {
-    .container {
-      display: flex;
-      justify-content: space-between;
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
 
-      padding-top: 53px;
-      padding-bottom: 56px;
-    }
+    padding-bottom: 43px;
+    padding-top: 43px;
   }
 
   .page-footer__logo,
@@ -25,11 +23,9 @@
   }
 }
 
-@media (min-width: $tablet) {
-  .page-footer {
-    .container {
-      padding-top: 60px;
-    }
+@media (min-width: $desktop) {
+  .page-footer__container {
+    padding-top: 60px;
   }
 }
 
