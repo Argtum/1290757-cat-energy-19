@@ -237,7 +237,7 @@
     &::before {
       content: "";
       position: absolute;
-      left: -75px;
+      left: -100vw;
 
       width: 100vw;
       height: 3px;
@@ -320,26 +320,36 @@
     &--no-title {
       width: 46.5%;
       padding-bottom: 0;
+      padding-top: 45px;
     }
 
     &--chose-program {
-      width: 47%;
-      margin-top: 65px;
-      padding: 34px 28px 36px 31px;
+      width: 46.9%;
+      margin-top: 66px;
+      padding: 35px 28px 36px 30px;
     }
   }
 
   .form__legend {
+    margin-left: -44px;
+    padding-right: 43px;
+
+    &::before,
+    &::after {
+      margin-top: 22px;
+    }
+
     &--master-data {
       padding-top: 68px;
     }
 
     &--comment {
       padding-top: 46px;
+      padding-right: 40px;
     }
 
     &--extra {
-      padding-top: 43px;
+      padding-top: 45px;
     }
   }
 
@@ -350,34 +360,57 @@
 
       margin-top: 5px;
     }
+
+    &--extra {
+      margin-left: -2px;
+    }
   }
 
   .form__item {
+    margin-top: 22px;
+
     &--master-data {
       &:nth-child(2n-1) {
         width: 46.5%;
       }
 
       &:nth-child(2n) {
-        width: 47%;
+        width: 46.9%;
+        padding-right: 2px;
       }
     }
 
     &--extra {
-      width: 20.1%;
+      width: 20%;
+      margin-top: 22px;
 
       &:nth-child(n+3) {
-        margin-top: 20px;
+        margin-top: 22px;
       }
 
       &:nth-child(n+5) {
         margin-top: 50px;
+        margin-left: 1px;
       }
+    }
+
+    &--radio {
+      margin-top: 36px;
+    }
+
+    &--weight,
+    &--age {
+      margin-top: 21px;
+    }
+
+    &--comment {
+      margin-left: 4px;
+      margin-right: -3px;
     }
   }
 
   .form__button-container {
-    margin-top: 50px;
+    margin-top: 37px;
   }
 
   .form__description {
@@ -386,13 +419,13 @@
 
   .form__field-icon {
     &--mail {
-      right: 20px;
-      top: 21px;
+      right: 19px;
+      top: 20px;
     }
 
     &--phone {
-      right: 20px;
-      top: 18px;
+      right: 19px;
+      top: 17px;
     }
   }
 }

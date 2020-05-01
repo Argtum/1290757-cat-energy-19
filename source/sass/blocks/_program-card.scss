@@ -38,7 +38,7 @@
 
   position: relative;
 
-  &:after {
+  &::after {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 24.2 11'%3E%3Cpolygon points='17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 '/%3E%3C/svg%3E");
     width: 25px;
     height: 12px;
@@ -48,20 +48,20 @@
   }
 
   &--slim {
-    &:after {
+    &::after {
       left: 96px;
     }
   }
 
   &--pro {
-    &:after {
+    &::after {
       left: 94px;
     }
   }
 
   &:hover,
   &:focus {
-    &:after {
+    &::after {
       content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 32 11'%3E%3Cpolygon points='25.4,0 32,5.5 25.4,11 25.4,6.6 0,6.6 0,4.4 25.4,4.4 '/%3E%3C/svg%3E");
       width: 34px;
       height: 12px;
@@ -127,25 +127,25 @@
   .program-card__link {
     font-size: 20px;
 
-    &:after {
+    &::after {
       top: -3px;
     }
 
     &--slim {
-      &:after {
+      &::after {
         left: 130px;
       }
     }
 
     &--pro {
-      &:after {
+      &::after {
         left: 124px;
       }
     }
 
     &:hover,
     &:focus {
-      &:after {
+      &::after {
         top: -3px;
       }
     }

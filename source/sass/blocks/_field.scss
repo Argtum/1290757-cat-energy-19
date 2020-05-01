@@ -44,7 +44,7 @@
   &:active,
   &:focus:invalid,
   &:hover:invalid {
-    padding: 10px 9px 13px 13px;
+    padding: 11px 9px 12px 14px;
   }
 
   &--radio {
@@ -190,7 +190,7 @@
   resize: none;
 
   &:active {
-    padding: 11px;
+    padding: 11px 11px 11px 13px;
   }
 }
 
@@ -300,7 +300,7 @@
     padding: 15px 18px;
 
     &:active {
-      padding: 11px 15px;
+      padding: 14px 17px;
     }
   }
 
@@ -328,21 +328,43 @@
 
 @media (min-width: $desktop) {
   .field__input {
-    padding: 11px 10px 14px 18px;
+    padding: 13px 10px 13px 18px;
 
     &:active,
     &:focus:invalid,
     &:hover:invalid {
-      padding: 10px 9px 13px 17px;
+      padding: 12px 9px 12px 17px;
+    }
+
+    &--weight {
+      padding-bottom: 14px;
+    }
+
+    &--master-data {
+      padding: 13px 10px 14px 18px;
     }
   }
 
   .field__textarea {
-    padding: 16px 17px;
+    padding: 14px 18px;
     margin-left: -3px;
 
     &:active {
-      padding: 15px 16px;
+      padding: 13px 17px;
+    }
+  }
+
+  .field__text {
+    &--cat-name {
+      margin-right: 17px;
+    }
+
+    &--email {
+      margin-right: 21px;
+    }
+
+    &--phone {
+      margin-right: 16px;
     }
   }
 }

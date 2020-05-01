@@ -48,3 +48,9 @@
     margin-top: 2px;
   }
 }
+
+@media (min-width: $desktop) {
+  .copyright__image {
+    margin-top: 4px;
+  }
+}
