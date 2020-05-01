@@ -230,6 +230,7 @@
 }());
 
 
+/* foreach polyfill */
 if ('NodeList' in window && !NodeList.prototype.forEach) {
   console.info('polyfill for IE11');
   NodeList.prototype.forEach = function (callback, thisArg) {
@@ -240,9 +241,10 @@ if ('NodeList' in window && !NodeList.prototype.forEach) {
   };
 }
 
+/* background-image - webp */
 var i=new Image;i.onload=i.onerror=function(){document.body.classList.add(i.height==1?"webp":"no-webp")};i.src="data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==";
 
-
+/* main */
 var navMain = document.querySelector('.main-nav');
 var menuToggle = document.querySelector('.menu-toggle');
 
@@ -282,7 +284,6 @@ if (window.matchMedia("(max-width: 767px)").matches) {
     });
   }
 
-
   if (buttonAfter) {
     buttonAfter.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -296,3 +297,21 @@ if (window.matchMedia("(max-width: 767px)").matches) {
     });
   }
 }
+
+/* map */
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+      center: [59.938635, 30.323118],
+      zoom: 17
+    }),
+
+    myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/map-pin.png',
+      iconImageSize: [113, 106],
+      iconImageOffset: [-56, -106]
+    });
+
+  myMap.geoObjects
+    .add(myPlacemark)
+});
