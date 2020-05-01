@@ -1,10 +1,17 @@
 .price {
+  background-image: url("../img/gift-photo-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $main-color;
 
   min-height: 289px;
-  padding: 187px 43px 60px;
+  padding: 187px 43px 42px;
 
   position: relative;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-desktop@2x.jpg");
+  }
 }
 
 .price__text {

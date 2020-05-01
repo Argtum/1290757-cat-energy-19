@@ -9,8 +9,11 @@
   }
 
   &--addition {
-    padding-top: 0;
+    padding-top: 1px;
     padding-bottom: 35px;
+
+    position: relative;
+    overflow: hidden;
   }
 
   &--advantage {
