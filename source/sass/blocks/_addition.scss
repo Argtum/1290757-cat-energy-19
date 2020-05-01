@@ -61,7 +61,8 @@
 
 @media (min-width: $desktop) {
   .addition__title {
-    padding: 0;
+    padding-left: 38px;
+    margin-left: -40px;
   }
 
   .addition__container {
@@ -70,6 +71,7 @@
   }
 
   .addition__price {
-    margin-top: 77px;
+    margin-top: 78px;
+    margin-right: 1px;
   }
 }

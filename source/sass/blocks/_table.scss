@@ -83,10 +83,19 @@
   }
 
   .table__row {
+    padding: 5px 0;
+    width: unset;
+    min-width: unset;
+    margin: 0;
+
     &--addition {
       justify-content: space-between;
 
       max-width: 290px;
+    }
+
+    &:last-child {
+      padding-top: 6px;
     }
   }
 
@@ -100,7 +109,11 @@
     }
 
     &--short-value {
-      padding-right: 9px;
+      padding-right: 10px;
+    }
+
+    &--second {
+      margin-right: -1px;
     }
   }
 }

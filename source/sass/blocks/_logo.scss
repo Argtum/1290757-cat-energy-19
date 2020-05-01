@@ -44,6 +44,12 @@
 }
 
 @media (min-width: $desktop) {
+  .logo {
+    &--catalog {
+      margin-top: -1px;
+    }
+  }
+
   .logo__image {
     &--header {
       width: 203px;

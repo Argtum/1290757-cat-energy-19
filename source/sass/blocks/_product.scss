@@ -124,7 +124,7 @@
 
     &--name {
       margin: 0 auto;
-      width: 130px;
+      min-width: 130px;
     }
   }
 
@@ -187,7 +187,7 @@
 @media (min-width: $desktop) {
   .product {
     width: 100%;
-    margin-right: 80px;
+    margin-right: 79px;
   }
 
   .product__item {
@@ -197,6 +197,8 @@
     &--main {
       width: 20.1%;
       margin: 142px 0 0;
+      padding: 0 38px 22px;
+      min-height: 431.5px;
     }
 
     &--addition {
@@ -206,16 +208,21 @@
 
       max-width: 895px;
       width: 100%;
-      padding: 17px 0 12px;
+      padding: 19px 0 11px;
     }
   }
 
   .product__button {
+    margin-top: 31px;
+
     &--addition {
-      margin-top: 0;
-      margin-left: 38px;
+      margin: -4px 1px 4px 36px;
       width: 345px;
     }
+  }
+
+  .product__text-wrapper {
+    margin-right: 1px;
   }
 
   .product__container {
@@ -226,19 +233,41 @@
 
   .product__link {
     &--image {
-      left: calc(25% - 63px);
+      left: calc(25% - 61px);
+      bottom: 301.5px;
+    }
+
+    &--name {
+      min-width: 131px;
+    }
+
+    &--short {
+      width: 130px;
+    }
+
+    &--fish-500 {
+      bottom: 300.5px;
+    }
+
+    &--buckwheat-500,
+    &--buckwheat-1000 {
+      bottom: 303px;
     }
   }
 
   .product__wrapper {
-    margin-top: 162px;
+    margin-top: 163.5px;
   }
 
   .product__options {
-    margin-top: 18px;
+    margin-top: 19px;
   }
 
   .product__image {
     width: 245px;
+
+    &--fish-500 {
+
+    }
   }
 }
