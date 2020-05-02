@@ -98,7 +98,7 @@
               <a href="catalog.html" class="program-type__link program-card__link program-card__link--slim">
                 Каталог slim
               </a>
-              <div class="program-card__image-container">
+              <div class="program-card__image-container program-card__image-container--slim">
                 <svg class="program-card__image program-card__image--slim" width="35" height="49">
                   <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
                 </svg>
@@ -113,7 +113,7 @@
               <a href="catalog.html" class="program-type__link program-card__link program-card__link--pro">
                 Каталог pro
               </a>
-              <div class="program-card__image-container">
+              <div class="program-card__image-container program-card__image-container--pro">
                 <svg class="program-card__image program-card__image--pro" width="67" height="28">
                   <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
                 </svg>
@@ -199,14 +199,32 @@
             <ul class="slider__list">
               <li class="slider__item slider__item--before slider__item--active">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1300px)"
+                          srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1300px)"
+                          srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                   <img class="slider__image" width="320" height="240" alt="cat before"
                        src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x">
                 </picture>
               </li>
               <li class="slider__item slider__item--after">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1300px)"
+                          srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1300px)"
+                          srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                   <img class="slider__image" width="320" height="240" alt="cat after"
                        src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x">
                 </picture>
@@ -274,7 +292,8 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link copyright__link--text">
+          <a href="https://htmlacademy.ru/intensive/adaptive"
+             class="copyright__link copyright__link--text copyright__link--up">
             HTML Academy
           </a>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link copyright__link--logo"

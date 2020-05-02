@@ -103,7 +103,7 @@
 
 @media (min-width: $tablet) {
   .program-card {
-    padding: 72px 53px 60px;
+    padding: 74px 53px 59px;
   }
 
   .program-card__title {
@@ -155,9 +155,17 @@
     width: 200px;
     height: 200px;
 
-    top: 90px;
     left: unset;
-    right: 60px;
+
+    &--slim {
+      top: 92px;
+      right: 62px;
+    }
+
+    &--pro {
+      right: 60px;
+      top: 91px;
+    }
   }
 
   .program-card__image {
@@ -165,8 +173,8 @@
       width: 141px;
       height: 194px;
 
-      top: -11px;
-      left: 28px;
+      top: -12px;
+      left: 30px;
     }
 
     &--pro {
@@ -174,7 +182,7 @@
       height: 113px;
 
       top: 43px;
-      left: -35px;
+      left: -36px;
     }
   }
 }
