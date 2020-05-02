@@ -4,7 +4,11 @@
   align-items: center;
 
   &--footer {
-    padding: 37px 25px 29px;
+    padding: 38px 25px 29px;
+  }
+
+  &--footer-catalog {
+    padding: 38px 25px 29px;
   }
 
   &:hover,
@@ -25,6 +29,12 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo__image {
+  &--footer {
+    height: 24px;
   }
 }
 

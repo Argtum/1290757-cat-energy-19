@@ -124,7 +124,7 @@
 
     &--name {
       margin: 0 auto;
-      min-width: 130px;
+      width: 131px;
     }
   }
 
@@ -197,7 +197,7 @@
     &--main {
       width: 20.1%;
       margin: 142px 0 0;
-      padding: 0 38px 22px;
+      padding: 0 36px 22px;
       min-height: 431.5px;
     }
 
@@ -235,14 +235,6 @@
     &--image {
       left: calc(25% - 61px);
       bottom: 301.5px;
-    }
-
-    &--name {
-      min-width: 131px;
-    }
-
-    &--short {
-      width: 130px;
     }
 
     &--fish-500 {
