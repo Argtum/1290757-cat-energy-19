@@ -28,7 +28,7 @@
 @media (min-width: $tablet) {
   .slider {
     position: relative;
-    background: linear-gradient(#ffffff, #ffffff 26.8%, $secondary-color 26.8%);
+    background: linear-gradient(#fff, #fff 26.8%, $secondary-color 26.8%);
   }
 
   .slider__list {
@@ -61,13 +61,13 @@
     }
 
     &--after {
-      background-image: url("../img/after-tablet@1x.png"), linear-gradient(#ffffff, #ffffff 26.8%, #eaeaea 26.8%);
+      background-image: url("../img/after-tablet@1x.png"), linear-gradient(#fff, #fff 26.8%, #eaeaea 26.8%);
       background-position: right top;
 
       margin-left: 50%;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/after-tablet@2x.png"), linear-gradient(#ffffff, #ffffff 26.8%, #eaeaea 26.8%);
+        background: url("../img/after-tablet@2x.png"), linear-gradient(#fff, #fff 26.8%, #eaeaea 26.8%);
       }
     }
   }*/

@@ -59,6 +59,8 @@
 
 @media (min-width: $desktop) {
   .page-header {
+    margin-top: 54px;
+
     &--main {
       &::after {
         content: "";
@@ -76,10 +78,6 @@
         }
       }
     }
-  }
-
-  .page-header {
-    margin-top: 54px;
   }
 
   .page-header__container {
