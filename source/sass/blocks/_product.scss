@@ -213,7 +213,9 @@
   }
 
   .product__button {
-    margin-top: 31px;
+    margin-top: 32px;
+    margin-left: 2px;
+    width: 169px;
 
     &--addition {
       margin: -4px 1px 4px 36px;
@@ -252,14 +254,10 @@
   }
 
   .product__options {
-    margin-top: 19px;
+    margin-top: 18px;
   }
 
   .product__image {
     width: 245px;
-
-    &--fish-500 {
-
-    }
   }
 }
