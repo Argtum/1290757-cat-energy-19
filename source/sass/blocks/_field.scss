@@ -48,7 +48,7 @@
   }
 
   &--radio {
-    &~.field__text {
+    & ~ .field__text {
       position: relative;
       cursor: pointer;
 
@@ -90,7 +90,7 @@
 
     &:focus,
     &:hover {
-      &~.field__text {
+      & ~ .field__text {
         &::before {
           border: 1px solid #bababa;
         }
@@ -98,13 +98,13 @@
     }
 
     &:active {
-      &~.field__text {
+      & ~ .field__text {
         opacity: 0.3;
       }
     }
 
     &:checked {
-      &~.field__text {
+      & ~ .field__text {
         &::after {
           display: block;
         }
@@ -113,7 +113,7 @@
   }
 
   &--checkbox {
-    &~.field__text {
+    & ~ .field__text {
       position: relative;
       cursor: pointer;
 
@@ -155,7 +155,7 @@
 
     &:focus,
     &:hover {
-      &~.field__text {
+      & ~ .field__text {
         &::before {
           border: 1px solid #bababa;
         }
@@ -163,13 +163,13 @@
     }
 
     &:active {
-      &~.field__text {
+      & ~ .field__text {
         opacity: 0.3;
       }
     }
 
     &:checked {
-      &~.field__text {
+      & ~ .field__text {
         &::after {
           display: block;
         }
@@ -248,7 +248,7 @@
     padding: 14px 10px 13px 18px;
 
     &--radio {
-      &~.field__text {
+      & ~ .field__text {
         padding-left: 59px;
 
         &::before {
@@ -269,7 +269,7 @@
     }
 
     &--checkbox {
-      &~.field__text {
+      & ~ .field__text {
         padding-left: 58px;
 
         &::before {
