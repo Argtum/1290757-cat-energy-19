@@ -101,7 +101,7 @@
                     </table>
                   </div>
                 </div>
-                <a href="form.html" class="product__button button button--green button--order">Заказать</a>
+                <a href="order.html" class="product__button button button--green button--order">Заказать</a>
               </li>
 
               <li class="product__item product__item--main">
@@ -365,7 +365,7 @@
               <li class="product__item product__item--main show-more">
                 <h3 class="show-more__title">Показать еще 100500 товаров</h3>
                 <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-                <a href="#" class="show-more__button button button--light button--show-all">Показать все</a>
+                <a href="catalog-2.html" class="show-more__button button button--light button--show-all">Показать все</a>
                 <svg class="show-more__icon show-more__icon--mobile" width="31" height="31">
                   <use xlink:href="img/sprite.svg#icon-plus-mobile"></use>
                 </svg>
@@ -467,7 +467,23 @@
           </div>
         </div>
         <div class="contact__map-container">
-          <div id="map" class="contact__map"></div>
+          <div id="map" class="contact__map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)"
+                srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="contact__map-image" width="320" height="375"
+                src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+                alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </picture>
+          </div>
         </div>
       </section>
     </main>

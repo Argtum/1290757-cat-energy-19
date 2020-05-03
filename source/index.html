@@ -65,7 +65,7 @@
             <p class="cat-food__description section__description section__description--cat-food">
               Занялся собой? Займись котом!
             </p>
-            <a href="catalog.html" class="cat-food__button button button--green button--small-text button--cat-food">
+            <a href="form.html" class="cat-food__button button button--green button--small-text button--cat-food">
               Подобрать программу
             </a>
           </div>
@@ -251,7 +251,23 @@
           </div>
         </div>
         <div class="contact__map-container">
-          <div id="map" class="contact__map"></div>
+          <div id="map" class="contact__map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)"
+                srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)"
+                srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="contact__map-image" width="320" height="375"
+                src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+                alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </picture>
+          </div>
         </div>
       </section>
     </main>

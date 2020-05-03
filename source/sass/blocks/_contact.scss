@@ -50,7 +50,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
 }
 
 @media (min-width: $tablet) {
@@ -83,6 +83,11 @@
   .contact__map {
     height: 395px;
   }
+
+  .contact__map-image {
+    height: 395px;
+    width: 768px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -110,5 +115,10 @@
   .contact__map {
     width: 100%;
     height: 400px;
+  }
+
+  .contact__map-image {
+    height: 400px;
+    width: 1440px;
   }
 }
