@@ -33,13 +33,9 @@
 
   .slider__list {
     width: 100%;
-    min-height: 584px;
+    min-height: 631px;
 
     position: relative;
-  }
-
-  /*.slider__image {
-    display: none;
   }
 
   .slider__item {
@@ -48,34 +44,34 @@
     width: 50%;
     padding-bottom: 68px;
 
-    background-repeat: no-repeat;
     position: absolute;
+    overflow: hidden;
+
+    &--after {
+      margin-left: 50%;
+      background: linear-gradient(#fff, #fff 26.8%, #eaeaea 26.8%);
+    }
+  }
+
+  .slider__image {
+    width: 690px;
+    height: 517px;
+    display: block;
+    margin-right: 0;
 
     &--before {
-      background-image: url("../img/before-tablet@1x.png");
-      z-index: 1;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/before-tablet@2x.png");
-      }
+      margin-left: calc((100vw - 677px) / 2);
     }
 
     &--after {
-      background-image: url("../img/after-tablet@1x.png"), linear-gradient(#fff, #fff 26.8%, #eaeaea 26.8%);
-      background-position: right top;
-
-      margin-left: 50%;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/after-tablet@2x.png"), linear-gradient(#fff, #fff 26.8%, #eaeaea 26.8%);
-      }
+      margin-left: calc(((100vw - 677px) / 2) - 50vw);
     }
-  }*/
+  }
 
   .slider__toggle {
     margin-top: 0;
 
-    bottom: 20px;
+    bottom: 68px;
     position: absolute;
     left: 0;
     right: 0;
@@ -84,29 +80,6 @@
 }
 
 @media (min-width: $desktop) {
-  .slider__item {
-    &--before {
-      background-image: url("../img/before-desktop@1x.png");
-
-      width: 53.9%;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/before-desktop@2x.png");
-      }
-    }
-
-    &--after {
-      background-image: url("../img/after-desktop@1x.png");
-
-      width: 48%;
-      margin-left: 53.9%;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/after-desktop@2x.png");
-      }
-    }
-  }
-
   .slider__toggle {
     margin-top: 39px;
     margin-left: 91px;
