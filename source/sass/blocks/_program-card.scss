@@ -38,7 +38,7 @@
 
   position: relative;
 
-  &:after {
+  &::after {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 24.2 11'%3E%3Cpolygon points='17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 '/%3E%3C/svg%3E");
     width: 25px;
     height: 12px;
@@ -48,20 +48,20 @@
   }
 
   &--slim {
-    &:after {
+    &::after {
       left: 96px;
     }
   }
 
   &--pro {
-    &:after {
+    &::after {
       left: 94px;
     }
   }
 
   &:hover,
   &:focus {
-    &:after {
+    &::after {
       content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 32 11'%3E%3Cpolygon points='25.4,0 32,5.5 25.4,11 25.4,6.6 0,6.6 0,4.4 25.4,4.4 '/%3E%3C/svg%3E");
       width: 34px;
       height: 12px;
@@ -81,7 +81,7 @@
 
   position: absolute;
   top: 23px;
-  left: 23px;
+  left: 22px;
 
   border-radius: 50%;
   background-color: $main-color;
@@ -103,7 +103,7 @@
 
 @media (min-width: $tablet) {
   .program-card {
-    padding: 72px 53px 60px;
+    padding: 74px 53px 59px;
   }
 
   .program-card__title {
@@ -127,25 +127,25 @@
   .program-card__link {
     font-size: 20px;
 
-    &:after {
+    &::after {
       top: -3px;
     }
 
     &--slim {
-      &:after {
+      &::after {
         left: 130px;
       }
     }
 
     &--pro {
-      &:after {
+      &::after {
         left: 124px;
       }
     }
 
     &:hover,
     &:focus {
-      &:after {
+      &::after {
         top: -3px;
       }
     }
@@ -155,9 +155,17 @@
     width: 200px;
     height: 200px;
 
-    top: 90px;
-    left: unset;
-    right: 60px;
+    left: auto;
+
+    &--slim {
+      top: 92px;
+      right: 62px;
+    }
+
+    &--pro {
+      right: 60px;
+      top: 91px;
+    }
   }
 
   .program-card__image {
@@ -165,8 +173,8 @@
       width: 141px;
       height: 194px;
 
-      top: -11px;
-      left: 28px;
+      top: -12px;
+      left: 30px;
     }
 
     &--pro {
@@ -174,7 +182,7 @@
       height: 113px;
 
       top: 43px;
-      left: -35px;
+      left: -36px;
     }
   }
 }
@@ -184,7 +192,7 @@
     max-width: 570px;
     width: 100%;
     min-height: 372px;
-    padding: 75px 52px 60px;
+    padding: 74px 52px 60px;
 
     &:nth-child(2n-1) {
       margin-right: 20px;
@@ -192,7 +200,7 @@
   }
 
   .program-card__title {
-    padding-left: 163px;
+    padding-left: 162px;
   }
 
   .program-card__description {
@@ -203,9 +211,9 @@
     width: 100px;
     height: 100px;
 
-    top: 49px;
+    top: 47px;
     left: 52px;
-    right: unset;
+    right: auto;
   }
 
   .program-card__image {
@@ -225,5 +233,19 @@
       left: -18px;
     }
   }
-}
 
+  .program-card__link {
+    &--slim {
+      &::after {
+        left: 132px;
+        top: -4px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        left: 126px;
+      }
+    }
+  }
+}

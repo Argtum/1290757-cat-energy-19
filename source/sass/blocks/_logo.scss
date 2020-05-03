@@ -4,7 +4,11 @@
   align-items: center;
 
   &--footer {
-    padding: 37px 25px 29px;
+    padding: 38px 25px 29px;
+  }
+
+  &--footer-catalog {
+    padding: 38px 25px 29px;
   }
 
   &:hover,
@@ -28,6 +32,12 @@
   }
 }
 
+.logo__image {
+  &--footer {
+    height: 24px;
+  }
+}
+
 @media (min-width: $tablet) {
   .logo {
     &--footer {
@@ -44,10 +54,17 @@
 }
 
 @media (min-width: $desktop) {
+  .logo {
+    &--catalog {
+      margin-top: -1px;
+    }
+  }
+
   .logo__image {
     &--header {
       width: 203px;
       height: 60px;
+      margin-top: -1px;
     }
   }
 }

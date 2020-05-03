@@ -1,7 +1,9 @@
 .form__fieldset {
   border: none;
-  padding: 26px 20px 22px 22px;
+  padding: 25px 20px 23px 22px;
   margin: 0 -20px;
+
+  position: relative;
 
   &--no-title {
     border-bottom: 1px solid #d9d9d9;
@@ -20,7 +22,7 @@
   &--comment {
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 21px;
+    padding-left: 20px;
   }
 
   &--extra {
@@ -34,13 +36,45 @@
   font-weight: normal;
   color: $main-text-color;
   line-height: 24px;
+  background-color: #ffffff;
 
-  margin-left: -3px;
+  padding-right: 23px;
+  padding-left: 23px;
+  margin-left: -26px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 100vw;
+    height: 3px;
+    margin-top: 14px;
+    background: $main-color;
+    z-index: -1;
+  }
 
   &--master-data,
   &--comment,
   &--extra {
     padding-top: 28px;
+  }
+
+  &--comment {
+    padding-left: 25px;
+    padding-right: 22px;
+  }
+
+  &--extra {
+    padding-right: 24px;
+  }
+
+  &--master-data {
+    width: 225px;
+    padding-right: 19px;
+
+    &::after {
+      margin-top: -10px;
+    }
   }
 }
 
@@ -50,27 +84,40 @@
   list-style: none;
 
   &--master-data {
-    margin-top: 33px;
+    margin-top: 34px;
   }
 
   &--comment {
-    margin-top: 32px;
+    margin-top: 35px;
   }
 
   &--extra {
-    margin-top: 39px;
+    margin-top: 40px;
   }
 }
 
 .form__item {
-  margin-top: 12px;
+  margin-top: 14px;
 
   &--extra {
-    margin-top: 25px;
+    margin-top: 12px;
+    height: 30px;
+
+    &:nth-child(2) {
+      margin-top: 13px;
+    }
   }
 
   &--radio {
     margin-top: 25px;
+
+    &:first-child {
+      margin-top: 26px;
+    }
+
+    &:last-child {
+      margin-top: 24px;
+    }
   }
 }
 
@@ -85,40 +132,12 @@
   color: $secondary-text-color;
 }
 
-.form__label {
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
-  color: #222222;
-  text-transform: uppercase;
-
-  display: flex;
-  align-items: baseline;
-
-  position: relative;
-}
-
-.form__label-text {
-  display: block;
-  white-space: nowrap;
-  margin-left: -3px;
-  margin-right: 15px;
-
-  &--master-data {
-    margin-right: 11px;
-  }
-}
-
-.form__field {
-  margin-top: 2px;
-}
-
 .form__field-icon {
   position: absolute;
   pointer-events: none;
 
   &--mail {
-    right: 15px;
+    right: 16px;
     top: 16px;
   }
 
@@ -129,7 +148,7 @@
 }
 
 .form__button-container {
-  margin-top: 40px;
+  margin-top: 29px;
 }
 
 @media (min-width: $tablet) {
@@ -148,7 +167,7 @@
 
     &--chose-program {
       border: 1px solid #d9d9d9;
-      padding: 32px 28px 36px;
+      padding: 34px 29px 36px;
       margin-left: -4px;
       margin-top: 50px;
     }
@@ -170,19 +189,36 @@
     margin-top: 20px;
 
     &--radio {
-      margin-top: 33px;
+      margin-top: 35px;
 
       &:first-child {
         margin-top: 0;
       }
+
+      &:last-child {
+        margin-top: 35px;
+      }
     }
 
     &--extra {
-      width: 45.4%;
+      width: 45.3%;
+      margin-top: 21px;
+
+      &:nth-child(2) {
+        margin-top: 21px;
+      }
 
       &:nth-child(n+3) {
-        margin-top: 52px;
+        margin-top: 42px;
       }
+    }
+
+    &--master-data {
+      margin-right: -2px;
+    }
+
+    &--phone {
+      margin-left: -4px;
     }
   }
 
@@ -190,28 +226,49 @@
     font-size: 36px;
     line-height: 36px;
 
-    margin-left: -6px;
+    padding-right: 42px;
+    padding-left: 39px;
+    margin-left: -45px;
+
+    &::after {
+      margin-top: 21px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100vw;
+
+      width: 100vw;
+      height: 3px;
+      margin-top: 21px;
+      background: $main-color;
+      z-index: -1;
+    }
 
     &--master-data {
-      padding-top: 77px;
+      padding-top: 75px;
+      width: auto;
     }
 
     &--comment {
-      padding-top: 44px;
+      padding-top: 43px;
+      padding-right: 39px;
     }
 
     &--extra {
-      padding-top: 40px;
+      padding-top: 43px;
     }
   }
 
   .form__list {
     &--master-data {
-      margin-top: 24px;
+      margin-top: 26px;
     }
 
     &--comment {
-      margin-top: 30px;
+      margin-top: 33px;
+      margin-left: -5px;
     }
 
     &--extra {
@@ -224,13 +281,9 @@
     }
   }
 
-  .form__label-text {
-    margin-right: 18px;
-  }
-
   .form__button-container {
     display: flex;
-    margin-top: 42px;
+    margin-top: 31px;
     margin-left: -5px;
   }
 
@@ -239,20 +292,15 @@
     font-size: 16px;
   }
 
-  .form__label {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .form__field-icon {
     &--mail {
-      right: 18px;
-      top: 21px;
+      right: 21px;
+      top: 20px;
     }
 
     &--phone {
-      right: 15px;
-      top: 18px;
+      right: 18px;
+      top: 17px;
     }
   }
 }
@@ -272,26 +320,36 @@
     &--no-title {
       width: 46.5%;
       padding-bottom: 0;
+      padding-top: 45px;
     }
 
     &--chose-program {
-      width: 47%;
-      margin-top: 65px;
-      padding: 34px 28px 36px 31px;
+      width: 46.9%;
+      margin-top: 66px;
+      padding: 35px 28px 36px 30px;
     }
   }
 
   .form__legend {
+    margin-left: -44px;
+    padding-right: 43px;
+
+    &::before,
+    &::after {
+      margin-top: 22px;
+    }
+
     &--master-data {
       padding-top: 68px;
     }
 
     &--comment {
       padding-top: 46px;
+      padding-right: 40px;
     }
 
     &--extra {
-      padding-top: 43px;
+      padding-top: 45px;
     }
   }
 
@@ -302,34 +360,57 @@
 
       margin-top: 5px;
     }
+
+    &--extra {
+      margin-left: -2px;
+    }
   }
 
   .form__item {
+    margin-top: 22px;
+
     &--master-data {
       &:nth-child(2n-1) {
         width: 46.5%;
       }
 
       &:nth-child(2n) {
-        width: 47%;
+        width: 46.9%;
+        padding-right: 2px;
       }
     }
 
     &--extra {
-      width: 20.1%;
+      width: 20%;
+      margin-top: 22px;
 
       &:nth-child(n+3) {
-        margin-top: 20px;
+        margin-top: 22px;
       }
 
       &:nth-child(n+5) {
         margin-top: 50px;
+        margin-left: 1px;
       }
+    }
+
+    &--radio {
+      margin-top: 36px;
+    }
+
+    &--weight,
+    &--age {
+      margin-top: 21px;
+    }
+
+    &--comment {
+      margin-left: 4px;
+      margin-right: -3px;
     }
   }
 
   .form__button-container {
-    margin-top: 50px;
+    margin-top: 37px;
   }
 
   .form__description {
@@ -338,13 +419,13 @@
 
   .form__field-icon {
     &--mail {
-      right: 20px;
-      top: 21px;
+      right: 19px;
+      top: 20px;
     }
 
     &--phone {
-      right: 20px;
-      top: 18px;
+      right: 19px;
+      top: 17px;
     }
   }
 }

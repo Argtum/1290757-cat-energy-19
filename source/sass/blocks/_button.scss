@@ -51,7 +51,7 @@
   .button {
     &--cat-food {
       width: 245px;
-      padding: 16px 15px 19px;
+      padding: 17px 15px 18px;
 
       font-size: 20px;
     }
@@ -83,6 +83,10 @@
       width: 46.5%;
       margin-left: 2px;
       padding: 18px 15px 17px;
+    }
+
+    &--order {
+      padding: 12px 15px 11px;
     }
   }
 }

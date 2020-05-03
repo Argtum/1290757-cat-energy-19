@@ -9,8 +9,11 @@
   }
 
   &--addition {
-    padding-top: 0;
+    padding-top: 1px;
     padding-bottom: 35px;
+
+    position: relative;
+    overflow: hidden;
   }
 
   &--advantage {
@@ -84,13 +87,13 @@
 @media (min-width: $tablet) {
   .section {
     &--cat-food {
-      min-height: 866px;
-      padding-bottom: 630px;
+      min-height: 865px;
+      padding-bottom: 629px;
     }
 
     &--advantage {
-      padding-top: 46px;
-      padding-bottom: 50px;
+      padding-top: 45px;
+      padding-bottom: 51px;
 
       border-bottom: 1px solid #d9d9d9;
     }
@@ -106,10 +109,11 @@
 
     &--program-selection {
       padding: 55px 0 72px;
+      overflow: hidden;
     }
 
     &--living-example {
-      padding-top: 44px;
+      padding-top: 43px;
       padding-bottom: 0;
     }
   }
@@ -154,7 +158,7 @@
 @media (min-width: $desktop) {
   .section {
     &--cat-food {
-      min-height: 658px;
+      min-height: 660px;
       padding-bottom: 80px;
     }
 
@@ -171,16 +175,19 @@
     }
 
     &--program-selection {
-      padding: 71px 0 82px;
+      padding: 72px 0 82px;
     }
 
     &--living-example {
       padding-top: 25px;
+      padding-bottom: 70px;
+      background: linear-gradient(#ffffff, #ffffff 25.7%, $secondary-color 25.7%);
+    }
+  }
 
-      .container {
-        display: flex;
-        justify-content: space-between;
-      }
+  .section__description {
+    &--program-selection {
+      padding-left: 1px;
     }
   }
 }

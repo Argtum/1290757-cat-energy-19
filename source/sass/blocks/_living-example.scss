@@ -7,7 +7,7 @@
 }
 
 .living-example__slider {
-  margin-top: 36px;
+  margin-top: 56px;
 }
 
 @media (min-width: $tablet) {
@@ -25,24 +25,28 @@
   }
 
   .living-example__slider {
-    margin-top: 87px;
+    margin-top: 106px;
     margin-left: -30px;
     margin-right: -30px;
   }
 }
 
 @media (min-width: $desktop) {
+  .living-example__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .living-example__content {
     max-width: 445px;
     width: 100%;
   }
 
   .living-example__description {
-    margin-top: 146px;
+    margin-top: 145px;
   }
 
   .living-example__slider {
-    margin-top: -54px;
-    margin-right: -28px;
+    margin: 0;
   }
 }

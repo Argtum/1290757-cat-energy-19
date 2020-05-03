@@ -1,9 +1,13 @@
 .copyright {
-  padding: 19px 0;
+  padding: 21px 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--catalog {
+    padding-bottom: 24px;
+  }
 }
 
 .copyright__link {
@@ -15,9 +19,16 @@
   display: block;
 
   &--text {
+    margin-top: -3px;
+    margin-left: -1px;
+
     &:active {
       opacity: 0.3;
     }
+  }
+
+  &--catalog {
+    margin-top: -6px;
   }
 }
 
@@ -39,5 +50,31 @@
     padding: 0;
     width: 163px;
     margin-top: -3px;
+  }
+
+  .copyright__link {
+    &--text {
+      margin-top: 0;
+    }
+
+    &--up {
+      margin-top: -3px;
+    }
+  }
+
+  .copyright__image {
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__image {
+    margin-top: 4px;
+  }
+
+  .copyright__link {
+    &--up {
+      margin-top: 0;
+    }
   }
 }

@@ -51,8 +51,8 @@
   .slider-toggle__button {
     font-size: 20px;
 
-    padding-bottom: 5px;
-    border-bottom: 1px dotted #eaeaea;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #bebebe;
     margin-left: -4px;
 
     cursor: auto;
@@ -61,7 +61,7 @@
   .slider-toggle__range {
     width: 428px;
     height: 6px;
-    margin: 9px 24px 0;
+    margin: 9px 26px 0 22px;
     padding: 0;
 
     border-radius: 2.5px;
@@ -81,7 +81,7 @@
     border: solid 1px #cdcdcd;
 
     position: relative;
-    left: calc(50% - 18px);
+    left: calc(50% - 15px);
     top: -14px;
 
     &::before {
@@ -111,5 +111,14 @@
         left: 11px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider-toggle__marker {
+    width: 33px;
+    height: 33px;
+
+    left: calc(50% - 14px);
   }
 }

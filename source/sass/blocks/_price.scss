@@ -1,10 +1,17 @@
 .price {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $main-color;
 
-  height: 289px;
-  padding: 187px 43px 60px;
+  min-height: 289px;
+  padding: 187px 43px 42px;
 
   position: relative;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .price__text {
@@ -21,15 +28,21 @@
 .price__icon {
   position: absolute;
   top: 65px;
-  left: calc(50% - 28px);
+  left: calc(50% - 27px);
 
   fill: #ffffff;
 }
 
 @media (min-width: $tablet) {
   .price {
-    height: 200px;
+    min-height: 200px;
     padding: 1px 0 0;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .price__text {
@@ -51,8 +64,14 @@
 @media (min-width: $desktop) {
   .price {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     padding: 40px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .price__text {

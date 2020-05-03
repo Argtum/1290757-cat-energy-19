@@ -11,7 +11,7 @@
   font-weight: normal;
   color: $main-text-color;
 
-  margin: 57px 0 0;
+  margin: 56px 0 0;
 }
 
 .show-more__description {
@@ -20,7 +20,7 @@
   text-align: center;
   color: $secondary-text-color;
 
-  margin: 10px 0 0;
+  margin: 11px 0 0;
 }
 
 .show-more__button {
@@ -71,8 +71,8 @@
 
   .show-more__icon {
     position: absolute;
-    top: 55px;
-    left: calc(50% - 30px);
+    top: 54px;
+    left: calc(50% - 29px);
 
     &--mobile {
       display: none;
@@ -91,5 +91,9 @@
 
   .show-more__title {
     margin: 137px 0 0;
+  }
+
+  .show-more__description {
+    margin-top: 27px;
   }
 }
