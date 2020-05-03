@@ -192,7 +192,7 @@
     max-width: 570px;
     width: 100%;
     min-height: 372px;
-    padding: 75px 52px 60px;
+    padding: 74px 52px 60px;
 
     &:nth-child(2n-1) {
       margin-right: 20px;
@@ -200,7 +200,7 @@
   }
 
   .program-card__title {
-    padding-left: 163px;
+    padding-left: 162px;
   }
 
   .program-card__description {
@@ -211,7 +211,7 @@
     width: 100px;
     height: 100px;
 
-    top: 49px;
+    top: 47px;
     left: 52px;
     right: unset;
   }
@@ -231,6 +231,21 @@
 
       top: 21px;
       left: -18px;
+    }
+  }
+
+  .program-card__link {
+    &--slim {
+      &::after {
+        left: 132px;
+        top: -4px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        left: 126px;
+      }
     }
   }
 }

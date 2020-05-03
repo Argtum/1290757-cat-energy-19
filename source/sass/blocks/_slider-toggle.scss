@@ -48,10 +48,6 @@
 }
 
 @media (min-width: $tablet) {
-  .slider-toggle {
-    margin-left: 3px;
-  }
-
   .slider-toggle__button {
     font-size: 20px;
 
@@ -115,5 +111,14 @@
         left: 11px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider-toggle__marker {
+    width: 33px;
+    height: 33px;
+
+    left: calc(50% - 14px);
   }
 }
