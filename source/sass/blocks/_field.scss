@@ -247,6 +247,12 @@
   .field__input {
     padding: 14px 10px 13px 18px;
 
+    &:active,
+    &:focus:invalid,
+    &:hover:invalid {
+      padding: 13px 9px 12px 17px;
+    }
+
     &--radio {
       & ~ .field__text {
         padding-left: 59px;
@@ -288,10 +294,22 @@
 
     &--master-data {
       padding: 13px 50px 14px 19px;
+
+      &:active,
+      &:focus:invalid,
+      &:hover:invalid {
+        padding: 12px 49px 13px 18px;
+      }
     }
 
     &--mail {
       padding: 14px 50px 13px 20px;
+
+      &:active,
+      &:focus:invalid,
+      &:hover:invalid {
+        padding: 13px 49px 12px 19px;
+      }
     }
   }
 
@@ -338,10 +356,22 @@
 
     &--weight {
       padding-bottom: 14px;
+
+      &:active,
+      &:focus:invalid,
+      &:hover:invalid {
+        padding-bottom: 13px;
+      }
     }
 
     &--master-data {
       padding: 13px 10px 14px 18px;
+
+      &:active,
+      &:focus:invalid,
+      &:hover:invalid {
+        padding: 12px 9px 13px 17px;
+      }
     }
   }
 
