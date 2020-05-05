@@ -49,11 +49,11 @@
 
   .page-header__container {
     padding: 0;
+  }
 
-    .container {
-      display: flex;
-      justify-content: space-between;
-    }
+  .page-header__container-centering {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
