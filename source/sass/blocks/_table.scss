@@ -60,6 +60,8 @@
   }
 
   .table__cell {
+    display: block;
+
     &--addition {
       min-width: 95px;
       text-align: right;
@@ -95,7 +97,8 @@
       width: 100%;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2),
+    &:nth-child(3) {
       padding-top: 6px;
     }
   }

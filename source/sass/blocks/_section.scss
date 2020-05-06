@@ -99,7 +99,7 @@
     }
 
     &--addition {
-      padding-top: 39px;
+      padding-top: 38px;
       padding-bottom: 76px;
     }
 
@@ -115,6 +115,24 @@
     &--living-example {
       padding-top: 43px;
       padding-bottom: 0;
+
+      background: linear-gradient(#ffffff, #ffffff 619px, $secondary-color 619px);
+
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(#ffffff, #ffffff 619px, #eaeaea 619px);
+      }
     }
   }
 
@@ -181,7 +199,14 @@
     &--living-example {
       padding-top: 25px;
       padding-bottom: 70px;
-      background: linear-gradient(#ffffff, #ffffff 25.7%, $secondary-color 25.7%);
+
+      background: linear-gradient(#ffffff, #ffffff 159px, $secondary-color 159px);
+
+      &::after {
+        background: linear-gradient(#ffffff, #ffffff 159px, #eaeaea 159px);
+
+        width: calc(((100vw - 1300px) / 2) + 317px);
+      }
     }
   }
 
