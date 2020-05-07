@@ -34,12 +34,14 @@
 @media (min-width: $desktop) {
   .living-example__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+
+    position: relative;
+    z-index: 3;
   }
 
   .living-example__content {
-    max-width: 445px;
-    width: 100%;
+    width: 701px;
   }
 
   .living-example__description {

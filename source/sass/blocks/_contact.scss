@@ -33,7 +33,7 @@
   color: $secondary-text-color;
 
   margin: 0;
-  width: 135px;
+  width: 136px;
 }
 
 .contact__map {
@@ -91,14 +91,14 @@
 }
 
 @media (min-width: $desktop) {
-  .contact {
+  .contact__container-centering {
     position: relative;
   }
 
   .contact__text-container {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 40px;
     z-index: 3;
 
     width: 570px;

@@ -86,15 +86,18 @@
     padding: 26px 36px 26px 37px;
 
     &--main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
       border: none;
 
       min-height: 431px;
       width: 45.8%;
       margin: 140px 0 0;
-      padding: 0 37px 22px 38px;
+      padding: 0 37px 40px 38px;
 
       background-color: $secondary-color;
-      position: relative;
 
       &:first-child {
         border-top: none;
@@ -117,9 +120,15 @@
 
   .product__link {
     &--image {
+      width: 325px;
+
       position: absolute;
-      bottom: 303px;
-      z-index: 3;
+      bottom: 192px;
+      left: calc(50% - 162px);
+    }
+
+    &--rice-500 {
+      bottom: 193px;
     }
 
     &--name {
@@ -129,7 +138,10 @@
   }
 
   .product__wrapper {
-    margin-top: 163px;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
   }
 
   .product__text-wrapper {
@@ -197,8 +209,8 @@
     &--main {
       width: 20.1%;
       margin: 142px 0 0;
-      padding: 0 36px 22px;
-      min-height: 431.5px;
+      padding: 0 36px 40px;
+      min-height: 430px;
     }
 
     &--addition {
@@ -213,13 +225,11 @@
   }
 
   .product__button {
-    margin-top: 32px;
+    margin-top: 31px;
     margin-left: 2px;
-    width: 169px;
 
     &--addition {
-      margin: -4px 1px 4px 36px;
-      width: 345px;
+      margin: -4px 0 4px 38px;
     }
   }
 
@@ -235,17 +245,17 @@
 
   .product__link {
     &--image {
-      left: calc(25% - 61px);
-      bottom: 301.5px;
+      left: calc(25% - 79px);
     }
 
-    &--fish-500 {
-      bottom: 300.5px;
+    &--fish-500,
+    &--rice-500 {
+      bottom: 191px;
     }
 
     &--buckwheat-500,
-    &--buckwheat-1000 {
-      bottom: 303px;
+    &--buckwheat-1000, {
+      bottom: 193px;
     }
   }
 

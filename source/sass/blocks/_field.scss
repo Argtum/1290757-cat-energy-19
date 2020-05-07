@@ -88,11 +88,19 @@
       }
     }
 
-    &:focus,
     &:hover {
       & ~ .field__text {
         &::before {
           border: 1px solid #bababa;
+        }
+      }
+    }
+
+    &:focus {
+      & ~ .field__text {
+        &::before {
+          border: 1px solid #bababa;
+          outline: 5px auto -webkit-focus-ring-color;
         }
       }
     }
@@ -153,11 +161,19 @@
       }
     }
 
-    &:focus,
     &:hover {
       & ~ .field__text {
         &::before {
           border: 1px solid #bababa;
+        }
+      }
+    }
+
+    &:focus {
+      & ~ .field__text {
+        &::before {
+          border: 1px solid #bababa;
+          outline: 5px auto -webkit-focus-ring-color;
         }
       }
     }

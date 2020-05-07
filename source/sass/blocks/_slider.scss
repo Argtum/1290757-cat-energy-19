@@ -28,7 +28,6 @@
 @media (min-width: $tablet) {
   .slider {
     position: relative;
-    background: linear-gradient(#ffffff, #ffffff 26.8%, $secondary-color 26.8%);
   }
 
   .slider__list {
@@ -49,7 +48,6 @@
 
     &--after {
       margin-left: 50%;
-      background: linear-gradient(#ffffff, #ffffff 26.8%, #eaeaea 26.8%);
     }
   }
 
@@ -95,7 +93,6 @@
 
   .slider__item {
     &--after {
-      background: linear-gradient(#ffffff, #ffffff 29.2%, #eaeaea 29.2%);
       width: 100vw;
     }
   }

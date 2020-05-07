@@ -60,6 +60,8 @@
   }
 
   .table__cell {
+    display: block;
+
     &--addition {
       min-width: 95px;
       text-align: right;
@@ -92,9 +94,11 @@
       justify-content: space-between;
 
       max-width: 290px;
+      width: 100%;
     }
 
-    &:nth-child(2) {
+    &:nth-child(2),
+    &:nth-child(3) {
       padding-top: 6px;
     }
   }
@@ -102,6 +106,7 @@
   .table__cell {
     &--addition {
       text-align: left;
+      width: 100%;
     }
 
     &--currency {
