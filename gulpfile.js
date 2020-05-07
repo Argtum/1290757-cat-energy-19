@@ -14,6 +14,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var del = require("del");
 var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -70,6 +71,7 @@ gulp.task("sprite", function () {
 });
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 gulp.task("js", function () {
